@@ -355,11 +355,11 @@ function _rrze_blogoverview_options() {
 
 function _rrze_teaserimage_options() {
     $options = array(
-	1 => array ('value' => '1', 'label' => __('Featured image > first image > first video > default image', RRZE_Theme::textdomain)),
-	2 => array ('value' => '2', 'label' => __('First image > featured image > first video > default image', RRZE_Theme::textdomain)),
-	3 => array ('value' => '3', 'label' => __('First video > featured image > first image > default image', RRZE_Theme::textdomain)),
-	4 => array ('value' => '4', 'label' => __('First video > first image > featured image > default image', RRZE_Theme::textdomain)),
-	5 => array ('value' => '5', 'label' => __('No teaser image', RRZE_Theme::textdomain))
+	1 => array ('value' => '1', 'label' => __('Ausgewähltes Bild > erstes Bild > erstes Video > Standardbild', RRZE_Theme::textdomain)),
+	2 => array ('value' => '2', 'label' => __('Erstes Bild > ausgewähltes Bild > erstes Video > Standardbild', RRZE_Theme::textdomain)),
+	3 => array ('value' => '3', 'label' => __('Erstes Video > ausgewähltes Bild > erstes Bild > Standardbild', RRZE_Theme::textdomain)),
+	4 => array ('value' => '4', 'label' => __('Erstes Video > erstes Bild > ausgewähltes Bild > Standardbild', RRZE_Theme::textdomain)),
+	5 => array ('value' => '5', 'label' => __('Kein Teaser-Bild', RRZE_Theme::textdomain))
     );
     return apply_filters('_rrze_teaserimage_options', $options);
 }

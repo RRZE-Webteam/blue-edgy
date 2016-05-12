@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blue Edgy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-12 12:10+0200\n"
+"POT-Creation-Date: 2016-05-12 14:52+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: RRZE-Webteam\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:6 ../content-index.php:1 ../content-page.php:1
@@ -79,7 +79,7 @@ msgstr "Comments are closed."
 #: ../content.php:35
 #, php-format
 msgid "Permalink zu %s"
-msgstr ""
+msgstr "Permalink for %s"
 
 #: ../content-aside.php:5
 msgid "Kurzmitteilung"
@@ -593,24 +593,24 @@ msgid "als kurze Vorschau"
 msgstr "as short preview"
 
 #: ../includes/theme-options.php:358
-msgid "Featured image > first image > first video > default image"
-msgstr ""
+msgid "Ausgewähltes Bild > erstes Bild > erstes Video > Standardbild"
+msgstr "Featured image > first image > first video > default image"
 
 #: ../includes/theme-options.php:359
-msgid "First image > featured image > first video > default image"
-msgstr ""
+msgid "Erstes Bild > ausgewähltes Bild > erstes Video > Standardbild"
+msgstr "First image > featured image > first video > default image"
 
 #: ../includes/theme-options.php:360
-msgid "First video > featured image > first image > default image"
-msgstr ""
+msgid "Erstes Video > ausgewähltes Bild > erstes Bild > Standardbild"
+msgstr "First video > featured image > first image > default image"
 
 #: ../includes/theme-options.php:361
-msgid "First video > first image > featured image > default image"
-msgstr ""
+msgid "Erstes Video > erstes Bild > ausgewähltes Bild > Standardbild"
+msgstr "First video > first image > featured image > default image"
 
 #: ../includes/theme-options.php:362
-msgid "No teaser image"
-msgstr "Kein Teaser-Bild"
+msgid "Kein Teaser-Bild"
+msgstr "No teaser image"
 
 #: ../includes/theme-options.php:371
 msgid "Platzhalter anzeigen"
@@ -664,6 +664,8 @@ msgid ""
 "Links des Textauszugs wird das Beitragsbild, ein Bild des Artikels, ein "
 "verlinktes Video oder ein Standardbild angezeigt (wenn vorhanden)."
 msgstr ""
+"On the left of the excerpt, the article image, an image of the article, a "
+"video link or a standard image is displayed."
 
 #: ../includes/theme-options.php:682
 msgid "Platzhalter-Bild für Vorschau"
@@ -683,11 +685,11 @@ msgstr "Footer (Widgets)"
 
 #: ../includes/theme-tags.php:10
 msgid "Suchen..."
-msgstr ""
+msgstr "Search..."
 
 #: ../includes/theme-tags.php:10
 msgid "Suchen"
-msgstr ""
+msgstr "Search"
 
 #: ../includes/theme-tags.php:17
 msgid "Sie befinden sich hier:"
@@ -802,7 +804,7 @@ msgstr "Terms of Use"
 
 #: ../includes/widgets.php:9
 msgid "Normaler Text oder HTML."
-msgstr ""
+msgstr "Unformatted text or HTML."
 
 #: ../includes/widgets.php:11
 msgid "Text"
@@ -827,6 +829,9 @@ msgstr "Automatically add paragraphs"
 #: ../sidebar-left.php:5 ../sidebar-right.php:4
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "No teaser image"
+#~ msgstr "Kein Teaser-Bild"
 
 #~ msgid "Normaler text oder HTML."
 #~ msgstr "Arbitrary text or HTML."
