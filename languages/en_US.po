@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Design RRZE\n"
+"Project-Id-Version: Blue Edgy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 16:04+0100\n"
+"POT-Creation-Date: 2016-05-12 12:10+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: RRZE-Webteam\n"
@@ -10,11 +10,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _n:1,2;_nx:1,2;__;_e;_ex\n"
+"X-Poedit-KeywordsList: _n:1,2;_nx:1,2;__;_e;_ex;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:6 ../content-index.php:1 ../content-page.php:1
@@ -71,6 +72,14 @@ msgstr "Newer Comments &rarr;"
 #: ../comments.php:30
 msgid "Die Kommentarfunktion ist geschlossen."
 msgstr "Comments are closed."
+
+#: ../content-aside.php:4 ../content-gallery.php:3 ../content-gallery.php:32
+#: ../content-image.php:4 ../content-link.php:4 ../content-quote.php:4
+#: ../content-status.php:4 ../content.php:4 ../content.php:6 ../content.php:28
+#: ../content.php:35
+#, php-format
+msgid "Permalink zu %s"
+msgstr ""
 
 #: ../content-aside.php:5
 msgid "Kurzmitteilung"
@@ -672,6 +681,14 @@ msgstr "Columns"
 msgid "Footer (Widgets)"
 msgstr "Footer (Widgets)"
 
+#: ../includes/theme-tags.php:10
+msgid "Suchen..."
+msgstr ""
+
+#: ../includes/theme-tags.php:10
+msgid "Suchen"
+msgstr ""
+
 #: ../includes/theme-tags.php:17
 msgid "Sie befinden sich hier:"
 msgstr "You are here:"
@@ -784,8 +801,8 @@ msgid "Nutzungsbedingungen"
 msgstr "Terms of Use"
 
 #: ../includes/widgets.php:9
-msgid "Normaler text oder HTML."
-msgstr "Arbitrary text or HTML."
+msgid "Normaler Text oder HTML."
+msgstr ""
 
 #: ../includes/widgets.php:11
 msgid "Text"
@@ -810,6 +827,9 @@ msgstr "Automatically add paragraphs"
 #: ../sidebar-left.php:5 ../sidebar-right.php:4
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Normaler text oder HTML."
+#~ msgstr "Arbitrary text or HTML."
 
 #~ msgid "Title:"
 #~ msgstr "Title:"
