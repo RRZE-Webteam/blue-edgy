@@ -114,3 +114,51 @@ add_shortcode('ym-tab', function($atts, $content = '') {
 
     return $output;
 });
+
+/* 
+ * Accordion analog zu Design Luna
+ * Funktionsweise:
+ * 
+ * [collapsibles]
+ * [collapse title="Erste Überschrift" color="blau"]
+ * Erster Text Text Text...
+ * [/collapse]
+ * [collapse title="Zweite Überschrift" color="hellblau"]
+ * Zweiter Text Text Text...    
+ * [/collapse]  
+ * [collapse title="Dritte Überschrift" color="gruen"]
+ * Dritter Text Text Text...
+ * [/collapse]
+ * [/collapsibles]
+ * 
+ * [collapse] und [/collapse] jeweils um die einzelnen Textabschnitte, [collapsibles] und [/collapsibles] einmal um den gesamten Accordion-Block herum.
+ * Folgende Farben stehen zur Verfügung: blau, hellblau, gruen und gelb. Die Farbangabe ist optional. Der Standardwert, wenn keine Farbe explizit angegeben wird, ist blau.
+ */
+
+add_action('wp_footer', 'add_accordion');
+
+add_shortcode('collapsibles', function($atts, $content = null) {
+    $content = shortcode_unautop(trim($content));
+    return '<div class="accordion">' . do_shortcode($content) . '</div>';
+});
+
+add_shortcode('collapse', function($atts, $content = null) {
+    extract(shortcode_atts(
+        array(
+            "title" => '',
+            "color" => ''
+        ), $atts));
+    $output = '';
+    $title = sanitize_text_field($title);
+    $color = sanitize_text_field($color);
+    $output .= '<h2 class="' . $color . '">' . $title . '</h2>';
+    $output .= '<div>';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+});
+
+function add_accordion() {
+    wp_enqueue_script( 'accordions' ); 
+}
+

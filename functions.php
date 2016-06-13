@@ -441,6 +441,8 @@ class RRZE_Theme {
 
         wp_register_script( 'base', sprintf( '%s/js/base.js', get_template_directory_uri() ), array(), false);
         wp_enqueue_script( 'base' );   
+        
+        wp_register_script( 'accordions', sprintf( '%s/js/accordions.js', get_template_directory_uri() ), array(), false, true );
   
     }
     
