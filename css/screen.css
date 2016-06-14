@@ -940,12 +940,10 @@
     * Accordion
     */
     .accordion h2 {
-        border-left-width: 5px;
-        border-bottom-width: 2px;
-        border-style: solid;
-        padding: 5px;
-        font-size: 1.125em;
-        border-color: #1559a6;
+        border-top: 3px solid;
+        padding: 12px 5px;
+        font-size: 100%;
+        font-weight: bold;
         margin-bottom: 0;
         padding-right: 5px; 
     }
@@ -953,32 +951,17 @@
         content: "\25B2";
         padding-left: 5px;
         float: right;
-        font-size: 16px; 
     }
     .accordion h2.closed:after {
         content: "\25BC";
         padding-left: 5px;
         float: right;
-        font-size: 16px; 
     }
     .accordion h2:hover {
         cursor: pointer; 
     }
-    .accordion h2.blau {
-        border-color: #1559a6; 
-    }
-    .accordion h2.hellblau {
-        border-color: #0094d4; 
-    }
-    .accordion h2.gelb {
-        border-color: #f47a20; 
-    }
-    .accordion h2.gruen {
-        border-color: #6b9c00; 
-    }
     .accordion div {
         padding: 10px;
-        font-size: 0.9375em;
         background: #eeeff1; 
     } 
 }
