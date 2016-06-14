@@ -28,6 +28,24 @@ Artikelnummer;Artikelname Name;Preis inkl. MwSt
 [/ym-tabs]
 </pre>
 
+Accordion-Shortcode
+<pre>
+[collapsibles]
+[collapse title="Erste Überschrift"]
+Erster Text Text Text...
+[/collapse]
+[collapse title="Zweite Überschrift"]
+Zweiter Text Text Text...    
+[/collapse]  
+[collapse title="Dritte Überschrift"]
+Dritter Text Text Text...
+[/collapse]
+[/collapsibles] 
+</pre>
+
+[collapse] und [/collapse] jeweils um die einzelnen Textabschnitte, [collapsibles] und [/collapsibles] einmal um den gesamten Accordion-Block herum.
+ 
+
 Nutzungsbedingungen
 
 Die Nutzung des Designs ist an folgende Bedingungen geknüpft:
