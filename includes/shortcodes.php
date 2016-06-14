@@ -114,3 +114,49 @@ add_shortcode('ym-tab', function($atts, $content = '') {
 
     return $output;
 });
+
+/* 
+ * Accordion analog zu Design Luna
+ * Funktionsweise:
+ * 
+ * [collapsibles]
+ * [collapse title="Erste Überschrift"]
+ * Erster Text Text Text...
+ * [/collapse]
+ * [collapse title="Zweite Überschrift"]
+ * Zweiter Text Text Text...    
+ * [/collapse]  
+ * [collapse title="Dritte Überschrift"]
+ * Dritter Text Text Text...
+ * [/collapse]
+ * [/collapsibles]
+ * 
+ * [collapse] und [/collapse] jeweils um die einzelnen Textabschnitte, [collapsibles] und [/collapsibles] einmal um den gesamten Accordion-Block herum.
+ * 
+ */
+
+
+
+add_shortcode('collapsibles', function($atts, $content = null) {
+    add_action('wp_footer', function($atts, $content = null) {
+        wp_enqueue_script( 'accordions' );
+    });
+    $content = shortcode_unautop(trim($content));
+    return '<div class="accordion">' . do_shortcode($content) . '</div>';
+});
+
+add_shortcode('collapse', function($atts, $content = null) {
+    extract(shortcode_atts(
+        array(
+            "title" => ''
+        ), $atts));
+    $output = '';
+    $title = sanitize_text_field($title);
+    $output .= '<h2>' . $title . '</h2>';
+    $output .= '<div>';
+    $output .= do_shortcode($content);
+    $output .= '</div>';
+    return $output;
+});
+
+

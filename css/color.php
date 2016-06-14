@@ -82,6 +82,7 @@ echo <<<EOL
 	.ym-vlist li ul li ul li ul li a:focus,
 	.ym-vlist li ul li ul li ul li a:hover,
 	.ym-vlist li ul li ul li ul li a:active { background-color: [widget-hover]; color: [widget-hover-text]; }
+    .accordion h2 { border-top-color: [menu]; }
     body > footer { background-image: linear-gradient(270deg, [menu], [footer-hover]);
         background-image: -webkit-linear-gradient(270deg, [menu], [footer-hover]);
         background-image: -moz-linear-gradient(270deg, [menu], [footer-hover]);
