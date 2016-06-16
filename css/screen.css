@@ -427,11 +427,6 @@
         background-color: transparent !important;
     }
 
-    /** wp-search widget */
-    .widget-title + form#searchform {
-        border-top: 4px solid #888;
-    }
-
     #searchform {
         background: none repeat scroll 0 0 transparent;
         white-space: nowrap;
