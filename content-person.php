@@ -6,8 +6,7 @@
         <div class="entry-content">
         <?php 
             $id = $post->ID;
-            echo fau_person_page($id);
-            the_content();
+            echo FAU_Person_Shortcodes::fau_person_page($id);
         ?>
         </div>
         <footer class="entry-meta">
