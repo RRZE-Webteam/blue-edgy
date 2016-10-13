@@ -153,8 +153,8 @@ add_shortcode('collapse', function($atts, $content = null) {
     $output = '';
     $title = sanitize_text_field($title);
     $output .= '<h2>' . $title . '</h2>';
-    $output .= '<div>';
-    $output .= do_shortcode($content);
+    $output .= '<div>' . PHP_EOL;
+    $output .= apply_filters( 'the_content', $content );
     $output .= '</div>';
     return $output;
 });

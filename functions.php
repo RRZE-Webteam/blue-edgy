@@ -79,7 +79,9 @@ class RRZE_Theme {
             return;
         }            
         $this->update_version();
-
+        //remove_filter( 'the_content', 'wpautop' );
+        //add_filter( 'the_content', 'wpautop' , 12);
+        
         require_once( get_template_directory() . '/includes/template-parser.php' );
         require_once( get_template_directory() . '/includes/theme-tags.php' );
         require_once( get_template_directory() . '/includes/theme-options.php' );

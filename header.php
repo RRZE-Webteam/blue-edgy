@@ -68,7 +68,7 @@
             <?php if( ! is_404() ): ?>
             <nav id="breadcrumb">
                 <div class="ym-wrapper">
-                    <h3 class="ym-skip"><a name="breadcrumbmarke" id="breadcrumbmarke"><?php _e( 'Breadcrumb', RRZE_Theme::textdomain ); ?></a></h2>
+                    <h3 class="ym-skip"><a name="breadcrumbmarke" id="breadcrumbmarke"><?php _e( 'Breadcrumb', RRZE_Theme::textdomain ); ?></a></h3>
                     <div class="ym-hlist">
                         <?php echo Theme_Tags::breadcrumb_nav(); ?>
                     </div>
