@@ -142,8 +142,7 @@ add_shortcode('collapsibles', function($atts, $content = null) {
         wp_enqueue_script( 'accordions' );
     });
     $content = shortcode_unautop(trim($content));
-    return '<div class="accordion">' . PHP_EOL . apply_filters( 'the_content', $content ) . '</div>' . PHP_EOL;
-    //return '<div class="accordion">' . do_shortcode($content) . '</div>';
+    return '<div class="accordion">' . do_shortcode($content) . '</div>';
 });
 
 add_shortcode('collapse', function($atts, $content = null) {
@@ -156,8 +155,7 @@ add_shortcode('collapse', function($atts, $content = null) {
     $output .= '<h2>' . $title . '</h2>';
     $output .= '<div>' . PHP_EOL;
     $output .= apply_filters( 'the_content', $content );
-    //$output .= do_shortcode($content);
-    $output .= '</div>' . PHP_EOL;
+    $output .= '</div>';
     return $output;
 });
 
