@@ -12,7 +12,7 @@ while ( have_posts() ) : the_post(); ?>
         ?>
         <p></p>
         <nav id="nav-pages">
-            <div class="navmenu-previous"><a href="../../"><?php _e('<span class="meta-nav">&laquo;</span> Zurück zur Übersicht', RRZE_UnivIS::textdomain); ?></a></div>
+            <div class="navmenu-previous"><a href="<?php echo get_permalink();?>"><?php _e('<span class="meta-nav">&laquo;</span> Zurück zur Übersicht', RRZE_UnivIS::textdomain); ?></a></div>
         </nav>
         </div>
         <footer class="entry-meta">
