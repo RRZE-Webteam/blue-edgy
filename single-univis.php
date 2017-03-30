@@ -13,7 +13,7 @@
         
         <div class="ym-col3">
             <div class="ym-cbox ym-clearfix">
-                <?php get_template_part( 'content', 'mitarbeiter' ); ?>
+                <?php get_template_part( 'content', 'univis' ); ?>
             </div>
         </div>
         <!-- .ym-ie-clearing only needed for IE6 & 7 support -->
@@ -26,7 +26,7 @@
         
        <div class="ym-col3">
             <div class="ym-cbox-right">
-                <?php get_template_part( 'content', 'mitarbeiter' ); ?>
+                <?php get_template_part( 'content', 'univis' ); ?>
             </div>
         </div>
         
@@ -37,13 +37,13 @@
         
        <div class="ym-col3">
             <div class="ym-cbox-left">
-                <?php get_template_part( 'content', 'mitarbeiter' ); ?>
+                <?php get_template_part( 'content', 'univis' ); ?>
             </div>
         </div>
 
     <?php elseif( _rrze_theme_options( 'column.layout' ) == '3' ) : ?>
         <div class="ym-col3">
-                <?php get_template_part( 'content', 'mitarbeiter' ); ?>
+                <?php get_template_part( 'content', 'univis' ); ?>
         </div>
            
     <?php endif;?>

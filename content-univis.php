@@ -10,7 +10,7 @@ while ( have_posts() ) : the_post(); ?>
         <?php             
             echo $univis_data;
         ?>
-            
+        <p></p>
         <nav id="nav-pages">
             <div class="navmenu-previous"><a href="../../"><?php _e('<span class="meta-nav">&laquo;</span> Zurück zur Übersicht', RRZE_UnivIS::textdomain); ?></a></div>
         </nav>
