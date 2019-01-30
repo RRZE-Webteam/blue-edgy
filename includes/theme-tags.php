@@ -245,6 +245,7 @@ class Theme_Tags {
             sprintf( is_front_page() && $current_blog->path == '/hilfe/' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . network_site_url( '/hilfe/', 'http' ) . '">' . $before . __( 'Hilfe', RRZE_Theme::textdomain ) . '</a>' ),
             sprintf( ! empty( $page ) && $page->post_name == 'kontakt' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . home_url( '/kontakt/', 'http' ) . '">' . $before . __( 'Kontakt', RRZE_Theme::textdomain ) . $after . '</a>' ),
             '<li><a href="' . network_site_url( '/impressum/', 'http' ) . '">' . $before . __( 'Impressum', RRZE_Theme::textdomain ) . $after . '</a></li>',
+            '<li><a href="' . network_site_url( '/datenschutz/', 'http' ) . '">' . $before . __( 'Datenschutz', RRZE_Theme::textdomain ) . $after . '</a></li>',
             '<li><a href="' . network_site_url( '/nutzungsbedingungen/', 'http' ) . '">' . $before . __( 'Nutzungsbedingungen', RRZE_Theme::textdomain ) . $after . '</a></li>'
             );
 

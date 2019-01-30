@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blue Edgy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-12 14:52+0100\n"
+"POT-Creation-Date: 2019-01-29 16:33+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: RRZE-Webteam\n"
@@ -135,7 +135,8 @@ msgstr "Image"
 msgid "Link"
 msgstr "Link"
 
-#: ../content-page.php:18 ../content-person.php:14 ../content-single.php:38
+#: ../content-page.php:18 ../content-person.php:13 ../content-single.php:38
+#: ../content-univis.php:19
 msgid "(Bearbeiten)"
 msgstr "(Edit)"
 
@@ -203,6 +204,10 @@ msgstr "Next post link <span class=\"meta-nav\">&rarr;</span>"
 msgid "Statusmitteilung"
 msgstr "Status"
 
+#: ../content-univis.php:15
+msgid "<span class=\"meta-nav\">&laquo;</span> Zurück zur Übersicht"
+msgstr "<span class=\"meta-nav\">&laquo;</span> Previous post link"
+
 #: ../content.php:23
 msgid "Weiterlesen"
 msgstr "Continue reading"
@@ -211,7 +216,7 @@ msgstr "Continue reading"
 msgid "Vollständigen Artikel lesen <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 
-#: ../footer.php:7 ../functions.php:335
+#: ../footer.php:7 ../functions.php:337
 msgid "Technisches Menü"
 msgstr "Technical menu"
 
@@ -241,51 +246,51 @@ msgstr ""
 msgid "Das Theme konnte nicht aktiviert werden."
 msgstr "Theme couldn't be activated."
 
-#: ../functions.php:189 ../includes/theme-options.php:866
+#: ../functions.php:191 ../includes/theme-options.php:866
 msgid "Layout"
 msgstr "Layout"
 
-#: ../functions.php:194 ../includes/theme-options.php:51
+#: ../functions.php:196 ../includes/theme-options.php:51
 msgid "Schriftart"
 msgstr "Font"
 
-#: ../functions.php:199
+#: ../functions.php:201
 msgid "Farben"
 msgstr "Colors"
 
-#: ../functions.php:204
+#: ../functions.php:206
 msgid "Blogdarstellung"
 msgstr "Blog Settings"
 
-#: ../functions.php:219
+#: ../functions.php:221
 msgid "Titel ausblenden"
 msgstr "Hide title"
 
-#: ../functions.php:326 ../includes/theme-options.php:282
+#: ../functions.php:328 ../includes/theme-options.php:282
 msgid "Grau"
 msgstr "Gray"
 
-#: ../functions.php:332 ../header.php:64 ../includes/theme-options.php:96
+#: ../functions.php:334 ../header.php:64 ../includes/theme-options.php:96
 msgid "Bereichsmenü"
 msgstr "Area menu"
 
-#: ../functions.php:352
+#: ../functions.php:354
 msgid "Sidebar links"
 msgstr "Sidebar left"
 
-#: ../functions.php:354 ../functions.php:364
+#: ../functions.php:356 ../functions.php:366
 msgid "Dieser Bereich ist für die Menüs und die Widgets vorgesehen."
 msgstr "This area is intended for the menus and widgets."
 
-#: ../functions.php:362
+#: ../functions.php:364
 msgid "Sidebar rechts"
 msgstr "Sidebar right"
 
-#: ../functions.php:372
+#: ../functions.php:374
 msgid "Footer-Sidebar links"
 msgstr "Footer Sidebar left"
 
-#: ../functions.php:374
+#: ../functions.php:376
 msgid ""
 "Dieser Bereich ist für die Zusatzinformationen (im Footer links) vorgesehen. "
 "Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf "
@@ -297,11 +302,11 @@ msgstr ""
 "should be displayed on each page. This information will not be sent to the "
 "printer!"
 
-#: ../functions.php:382
+#: ../functions.php:384
 msgid "Footer-Sidebar mitte"
 msgstr "Footer Sidebar center"
 
-#: ../functions.php:384
+#: ../functions.php:386
 msgid ""
 "Dieser Bereich ist für die Zusatzinformationen (im Footer mitte) vorgesehen. "
 "Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf "
@@ -312,11 +317,11 @@ msgstr ""
 "Here could be useful links and other information is available, which should "
 "be displayed on each page. This information will not be sent to the printer!"
 
-#: ../functions.php:392
+#: ../functions.php:394
 msgid "Footer-Sidebar rechts"
 msgstr "Footer Sidebar right"
 
-#: ../functions.php:394
+#: ../functions.php:396
 msgid ""
 "Dieser Bereich ist für die Zusatzinformationen (im Footer rechts) "
 "vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen "
@@ -328,15 +333,15 @@ msgstr ""
 "should be displayed on each page. This information will not be sent to the "
 "printer!"
 
-#: ../functions.php:516
+#: ../functions.php:520
 msgid "Weitere Einstellungen"
 msgstr "More Settings"
 
-#: ../functions.php:648
+#: ../functions.php:652
 msgid "Sie haben noch keinen Titel eingegeben."
 msgstr "Please enter a title."
 
-#: ../functions.php:655
+#: ../functions.php:659
 msgid "Dokument ohne Titel"
 msgstr "Document without title"
 
@@ -799,6 +804,10 @@ msgid "Impressum"
 msgstr "Imprint"
 
 #: ../includes/theme-tags.php:248
+msgid "Datenschutz"
+msgstr "Data protection"
+
+#: ../includes/theme-tags.php:249
 msgid "Nutzungsbedingungen"
 msgstr "Terms of Use"
 
