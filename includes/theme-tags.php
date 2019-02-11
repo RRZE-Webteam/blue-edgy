@@ -240,13 +240,13 @@ class Theme_Tags {
         extract( $args );
 
         $links = array(
-            '<li><a href="' . network_site_url( '/', 'http' ) . '">' . $before . __( 'Blogs@FAU', RRZE_Theme::textdomain ) . $after . '</a></li>',
+            '<li><a href="' . network_site_url( '/', 'https' ) . '">' . $before . __( 'Blogs@FAU', RRZE_Theme::textdomain ) . $after . '</a></li>',
             '<li><a href="http://www.portal.uni-erlangen.de/forums/viewforum/94">' . $before . __( 'Forum', RRZE_Theme::textdomain ) . $after . '</a></li>',
-            sprintf( is_front_page() && $current_blog->path == '/hilfe/' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . network_site_url( '/hilfe/', 'http' ) . '">' . $before . __( 'Hilfe', RRZE_Theme::textdomain ) . '</a>' ),
-            sprintf( ! empty( $page ) && $page->post_name == 'kontakt' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . home_url( '/kontakt/', 'http' ) . '">' . $before . __( 'Kontakt', RRZE_Theme::textdomain ) . $after . '</a>' ),
-            '<li><a href="' . network_site_url( '/impressum/', 'http' ) . '">' . $before . __( 'Impressum', RRZE_Theme::textdomain ) . $after . '</a></li>',
-            '<li><a href="' . network_site_url( '/datenschutz/', 'http' ) . '">' . $before . __( 'Datenschutz', RRZE_Theme::textdomain ) . $after . '</a></li>',
-            '<li><a href="' . network_site_url( '/nutzungsbedingungen/', 'http' ) . '">' . $before . __( 'Nutzungsbedingungen', RRZE_Theme::textdomain ) . $after . '</a></li>'
+            sprintf( is_front_page() && $current_blog->path == '/hilfe/' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . network_site_url( '/hilfe/', 'https' ) . '">' . $before . __( 'Hilfe', RRZE_Theme::textdomain ) . '</a>' ),
+            sprintf( ! empty( $page ) && $page->post_name == 'kontakt' ? '<li class="current-menu-item">%s</li>' : '<li>%s</li>', '<a href="' . home_url( '/kontakt/', 'https' ) . '">' . $before . __( 'Kontakt', RRZE_Theme::textdomain ) . $after . '</a>' ),
+            '<li><a href="' . network_site_url( '/impressum/', 'https' ) . '">' . $before . __( 'Impressum', RRZE_Theme::textdomain ) . $after . '</a></li>',
+            '<li><a href="' . network_site_url( '/datenschutz/', 'https' ) . '">' . $before . __( 'Datenschutz', RRZE_Theme::textdomain ) . $after . '</a></li>',
+            '<li><a href="' . network_site_url( '/nutzungsbedingungen/', 'https' ) . '">' . $before . __( 'Nutzungsbedingungen', RRZE_Theme::textdomain ) . $after . '</a></li>'
             );
 
         $li = array();
