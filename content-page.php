@@ -1,4 +1,4 @@
-<h2 class="ym-skip"><a name="contentmarke" id="contentmarke"><?php _e( 'Inhalt', RRZE_Theme::textdomain ); ?></a></h2>
+<h2 class="ym-skip"><a name="contentmarke" id="contentmarke"><?php _e( 'Inhalt', 'blue-edgy' ); ?></a></h2>
 
 <?php while( have_posts() ) : the_post(); ?>
 
@@ -10,12 +10,12 @@
         <?php endif; ?>
 
         <div class="entry-content">
-            <?php the_content( __( 'Weiterlesen <span class="meta-nav">&rarr;</span>', RRZE_Theme::textdomain ) ); ?>
-            <?php wp_link_pages( array( 'before' => '<nav id="nav-pages"><div class="ym-wbox"><span>' . __( 'Seiten:', RRZE_Theme::textdomain ) . '</span>', 'after' => '</div></nav>' ) ); ?>
+            <?php the_content( __( 'Weiterlesen <span class="meta-nav">&rarr;</span>', 'blue-edgy' ) ); ?>
+            <?php wp_link_pages( array( 'before' => '<nav id="nav-pages"><div class="ym-wbox"><span>' . __( 'Seiten:', 'blue-edgy' ) . '</span>', 'after' => '</div></nav>' ) ); ?>
         </div>
 
         <footer class="entry-meta">
-            <?php edit_post_link( __( '(Bearbeiten)', RRZE_Theme::textdomain ), '<div class="ym-wbox"><span class="edit-link">', '</span></div>' ); ?>
+            <?php edit_post_link( __( '(Bearbeiten)', 'blue-edgy' ), '<div class="ym-wbox"><span class="edit-link">', '</span></div>' ); ?>
         </footer>
     </article>
 

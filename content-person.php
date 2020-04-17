@@ -10,7 +10,7 @@
         ?>
         </div>
         <footer class="entry-meta">
-            <?php edit_post_link( __( '(Bearbeiten)', RRZE_Theme::textdomain ), '<div class="ym-wbox"><span class="edit-link">', '</span></div>' ); ?>
+            <?php edit_post_link( __( '(Bearbeiten)', 'blue-edgy' ), '<div class="ym-wbox"><span class="edit-link">', '</span></div>' ); ?>
         </footer>
     </article>
 <?php endwhile; ?>

@@ -4,7 +4,7 @@
         
         <nav id="tecmenu">
             <div class="ym-wrapper">
-                <h2 class="ym-skip"><a name="hilfemarke" id="hilfemarke"><?php _e( 'Technisches Menü', RRZE_Theme::textdomain ); ?></a></h2>
+                <h2 class="ym-skip"><a name="hilfemarke" id="hilfemarke"><?php _e( 'Technisches Menü', 'blue-edgy' ); ?></a></h2>
                 <?php echo Theme_Tags::tecmenu(); ?>
             </div>
             <div class="ym-clearfix"></div>
@@ -15,7 +15,7 @@
                 <?php if ( is_active_sidebar( 'sidebar-footer-left' ) || is_active_sidebar( 'sidebar-footer-center' ) || is_active_sidebar( 'sidebar-footer-right' ) ) : ?>
                 <div class="ym-wbox">
                     <div id="zusatzinfo" class="ym-noprint">	
-                        <h2 class="ym-skip"><a name="zusatzinfomarke" id="zusatzinfomarke"><?php _e( 'Zusatzinformationen', RRZE_Theme::textdomain ); ?></a></h2>
+                        <h2 class="ym-skip"><a name="zusatzinfomarke" id="zusatzinfomarke"><?php _e( 'Zusatzinformationen', 'blue-edgy' ); ?></a></h2>
 
                         <div class="ym-column">
                             <div class="ym-column linearize-level-1">
