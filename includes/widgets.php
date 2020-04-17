@@ -6,9 +6,9 @@
 class rrze_Widget_Text extends WP_Widget {
 
 	function __construct() {
-		$widget_ops = array('classname' => 'widget_text', 'description' => __('Normaler Text oder HTML.', RRZE_Theme::textdomain ));
+		$widget_ops = array('classname' => 'widget_text', 'description' => __('Normaler Text oder HTML.', 'blue-edgy' ));
 		$control_ops = array('width' => 400, 'height' => 350);
-		parent::__construct('text', __('Text', RRZE_Theme::textdomain ), $widget_ops, $control_ops);
+		parent::__construct('text', __('Text', 'blue-edgy' ), $widget_ops, $control_ops);
 	}
 
 	function widget( $args, $instance ) {
@@ -53,18 +53,18 @@ class rrze_Widget_Text extends WP_Widget {
 		$bottom = $instance['bottom'] ? 'checked="checked"' : '';
 
 ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Titel:', RRZE_Theme::textdomain ); ?></label>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Titel:', 'blue-edgy' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
 		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
                 <p>
-			<input class="checkbox" type="checkbox" <?php echo $align; ?> id="<?php echo $this->get_field_id('align'); ?>" name="<?php echo $this->get_field_name('align'); ?>" /> <label for="<?php echo $this->get_field_id('align'); ?>"><?php _e('Inhalt mittig ausrichten', RRZE_Theme::textdomain); ?></label>
+			<input class="checkbox" type="checkbox" <?php echo $align; ?> id="<?php echo $this->get_field_id('align'); ?>" name="<?php echo $this->get_field_name('align'); ?>" /> <label for="<?php echo $this->get_field_id('align'); ?>"><?php _e('Inhalt mittig ausrichten', 'blue-edgy'); ?></label>
                 <br/>
-			<input class="checkbox" type="checkbox" <?php echo $bottom; ?> id="<?php echo $this->get_field_id('bottom'); ?>" name="<?php echo $this->get_field_name('bottom'); ?>" /> <label for="<?php echo $this->get_field_id('bottom'); ?>"><?php _e('Fußlinie nicht anzeigen', RRZE_Theme::textdomain); ?></label>
+			<input class="checkbox" type="checkbox" <?php echo $bottom; ?> id="<?php echo $this->get_field_id('bottom'); ?>" name="<?php echo $this->get_field_name('bottom'); ?>" /> <label for="<?php echo $this->get_field_id('bottom'); ?>"><?php _e('Fußlinie nicht anzeigen', 'blue-edgy'); ?></label>
 		
                 </p>
 
-		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Absätze automatisch hinzufügen', RRZE_Theme::textdomain ); ?></label></p>
+		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Absätze automatisch hinzufügen', 'blue-edgy' ); ?></label></p>
 <?php
 	}
 };

@@ -13,7 +13,7 @@ add_filter( 'option_page_capability__rrze_options', function( $capability ) {
 } );
 
 add_action( 'admin_menu', function() {
-	add_theme_page( __( 'Einstellungen', RRZE_Theme::textdomain ), __( 'Einstellungen', RRZE_Theme::textdomain ), 'edit_theme_options', 'theme_options', '_rrze_theme_options_menu_page' );
+	add_theme_page( __( 'Einstellungen', 'blue-edgy' ), __( 'Einstellungen', 'blue-edgy' ), 'edit_theme_options', 'theme_options', '_rrze_theme_options_menu_page' );
     
     $pages = RRZE_Theme::$options_pages;
     foreach( $pages as $page) {
@@ -35,52 +35,52 @@ add_action( 'admin_init', function() {
     /* Layout options */
     register_setting( 'layout.options', RRZE_Theme::option_name, '_rrze_theme_options_validate' );
 
-    add_settings_section( 'layout.section', __( 'Layouteinstellungen', RRZE_Theme::textdomain ), '_rrze_section_layout_callback', 'layout.options' );
+    add_settings_section( 'layout.section', __( 'Layouteinstellungen', 'blue-edgy' ), '_rrze_section_layout_callback', 'layout.options' );
 
-    add_settings_field( 'column.layout', __( 'Seitenlayout', RRZE_Theme::textdomain ), '_rrze_field_columnlayout_callback', 'layout.options', 'layout.section' );
+    add_settings_field( 'column.layout', __( 'Seitenlayout', 'blue-edgy' ), '_rrze_field_columnlayout_callback', 'layout.options', 'layout.section' );
     
-    add_settings_field( 'header.layout', __( 'Header-Layout', RRZE_Theme::textdomain ), '_rrze_field_header_layout_callback', 'layout.options', 'layout.section' );    
+    add_settings_field( 'header.layout', __( 'Header-Layout', 'blue-edgy' ), '_rrze_field_header_layout_callback', 'layout.options', 'layout.section' );    
     
-    add_settings_field( 'footer.layout', __( 'Footer-Layout', RRZE_Theme::textdomain ), '_rrze_field_footer_layout_callback', 'layout.options', 'layout.section' );
+    add_settings_field( 'footer.layout', __( 'Footer-Layout', 'blue-edgy' ), '_rrze_field_footer_layout_callback', 'layout.options', 'layout.section' );
     
-    add_settings_field( 'search.form', __( 'Position des Suchformulars', RRZE_Theme::textdomain ), '_rrze_field_searchform_callback', 'layout.options', 'layout.section' );
+    add_settings_field( 'search.form', __( 'Position des Suchformulars', 'blue-edgy' ), '_rrze_field_searchform_callback', 'layout.options', 'layout.section' );
     
     /* Typography options */
     register_setting( 'typography.options', RRZE_Theme::option_name, '_rrze_theme_options_validate' );
 
-    add_settings_section( 'typography.section', __('Schriftart', RRZE_Theme::textdomain ), '_rrze_section_typography_callback', 'typography.options' );
+    add_settings_section( 'typography.section', __('Schriftart', 'blue-edgy' ), '_rrze_section_typography_callback', 'typography.options' );
 
-    add_settings_field( 'body.typography', __('Allgemein', RRZE_Theme::textdomain ), '_rrze_field_body_typography_callback', 'typography.options', 'typography.section' );
+    add_settings_field( 'body.typography', __('Allgemein', 'blue-edgy' ), '_rrze_field_body_typography_callback', 'typography.options', 'typography.section' );
 
-    add_settings_field( 'heading.typography', __('Überschrift', RRZE_Theme::textdomain ), '_rrze_field_heading_typography_callback', 'typography.options', 'typography.section' );
+    add_settings_field( 'heading.typography', __('Überschrift', 'blue-edgy' ), '_rrze_field_heading_typography_callback', 'typography.options', 'typography.section' );
 
-    add_settings_field( 'menu.typography', __('Menü', RRZE_Theme::textdomain ), '_rrze_field_menu_typography_callback', 'typography.options', 'typography.section' );
+    add_settings_field( 'menu.typography', __('Menü', 'blue-edgy' ), '_rrze_field_menu_typography_callback', 'typography.options', 'typography.section' );
 
-    add_settings_field( 'widget.title.typography', __('Widget-Titel', RRZE_Theme::textdomain ), '_rrze_field_widget_title_typography_callback', 'typography.options', 'typography.section' );
+    add_settings_field( 'widget.title.typography', __('Widget-Titel', 'blue-edgy' ), '_rrze_field_widget_title_typography_callback', 'typography.options', 'typography.section' );
 
-    add_settings_field( 'widget.content.typography', __('Widget-Inhalt', RRZE_Theme::textdomain ), '_rrze_field_widget_content_typography_callback', 'typography.options', 'typography.section' );
+    add_settings_field( 'widget.content.typography', __('Widget-Inhalt', 'blue-edgy' ), '_rrze_field_widget_content_typography_callback', 'typography.options', 'typography.section' );
     
     /* Color options */
     register_setting( 'color.options', RRZE_Theme::option_name, '_rrze_theme_options_validate' );
 
-    add_settings_section( 'color.schema.section', __('Farbeinstellungen', RRZE_Theme::textdomain ), '_rrze_section_color_style_callback', 'color.options' );
+    add_settings_section( 'color.schema.section', __('Farbeinstellungen', 'blue-edgy' ), '_rrze_section_color_style_callback', 'color.options' );
 
-    //add_settings_field( 'color.style', __('Farben', RRZE_Theme::textdomain ), '_rrze_field_color_style_callback', 'color.options', 'color.schema.section' );
+    //add_settings_field( 'color.style', __('Farben', 'blue-edgy' ), '_rrze_field_color_style_callback', 'color.options', 'color.schema.section' );
     
-    add_settings_field( 'color.schema', __('Farbschemas', RRZE_Theme::textdomain ), '_rrze_field_color_schema_callback', 'color.options', 'color.schema.section' );
+    add_settings_field( 'color.schema', __('Farbschemas', 'blue-edgy' ), '_rrze_field_color_schema_callback', 'color.options', 'color.schema.section' );
     
     /* Overview options */
     register_setting( 'overview.options', RRZE_Theme::option_name, '_rrze_theme_options_validate' );
 
-    add_settings_section( 'overview.section', __( 'Darstellung der Beitragsübersicht', RRZE_Theme::textdomain ), '_rrze_section_overview_callback', 'overview.options' );
+    add_settings_section( 'overview.section', __( 'Darstellung der Beitragsübersicht', 'blue-edgy' ), '_rrze_section_overview_callback', 'overview.options' );
 
-    add_settings_field( 'blog.overview', __( 'Beiträge auf der Übersichtsseite anzeigen', RRZE_Theme::textdomain ), '_rrze_field_blogoverview_callback', 'overview.options', 'overview.section' );
+    add_settings_field( 'blog.overview', __( 'Beiträge auf der Übersichtsseite anzeigen', 'blue-edgy' ), '_rrze_field_blogoverview_callback', 'overview.options', 'overview.section' );
     
-    add_settings_field( 'words.overview', __( 'Anzahl der angezeigten Wörter in der Vorschau', RRZE_Theme::textdomain ), '_rrze_field_wordsoverview_callback', 'overview.options', 'overview.section' );
+    add_settings_field( 'words.overview', __( 'Anzahl der angezeigten Wörter in der Vorschau', 'blue-edgy' ), '_rrze_field_wordsoverview_callback', 'overview.options', 'overview.section' );
 
-    add_settings_field( 'teaser.image', __( 'Bild im Textauszug', RRZE_Theme::textdomain ), '_rrze_field_teaserimage_callback', 'overview.options', 'overview.section' );
+    add_settings_field( 'teaser.image', __( 'Bild im Textauszug', 'blue-edgy' ), '_rrze_field_teaserimage_callback', 'overview.options', 'overview.section' );
     
-    add_settings_field( 'teaser.image.default', __('Platzhalter für Vorschau', RRZE_Theme::textdomain ), '_rrze_field_teaserimage_default_callback', 'overview.options', 'overview.section' );
+    add_settings_field( 'teaser.image.default', __('Platzhalter für Vorschau', 'blue-edgy' ), '_rrze_field_teaserimage_default_callback', 'overview.options', 'overview.section' );
     
 } );
 
@@ -88,12 +88,12 @@ function _rrze_searchform_options() {
     $options = array(
         'none' => array(
             'value' => 'none',
-            'label' => __( 'keiner', RRZE_Theme::textdomain )
+            'label' => __( 'keiner', 'blue-edgy' )
         ),
         
         'bereichsmenu' => array(
             'value' => 'bereichsmenu',
-            'label' => __( 'Bereichsmenü', RRZE_Theme::textdomain )
+            'label' => __( 'Bereichsmenü', 'blue-edgy' )
         )          
     );
 
@@ -104,21 +104,21 @@ function _rrze_columnlayout_options() {
     $options = array(
         '3' => array(
             'value' => '3',
-            'label' => __( '1 Spalte - keine Sidebar', RRZE_Theme::textdomain )
+            'label' => __( '1 Spalte - keine Sidebar', 'blue-edgy' )
         ),
         '1-3' => array(
             'value' => '1-3',
-            'label' => __( '2 Spalten - linke Sidebar', RRZE_Theme::textdomain )
+            'label' => __( '2 Spalten - linke Sidebar', 'blue-edgy' )
         ),
         
         '2-3' => array(
             'value' => '2-3',
-            'label' => __( '2 Spalten - rechte Sidebar', RRZE_Theme::textdomain )
+            'label' => __( '2 Spalten - rechte Sidebar', 'blue-edgy' )
         ),
         
         '1-2-3' => array(
             'value' => '1-2-3',
-            'label' => __( '3 Spalten - linke und rechte Sidebar', RRZE_Theme::textdomain )
+            'label' => __( '3 Spalten - linke und rechte Sidebar', 'blue-edgy' )
         )
         
     );
@@ -149,13 +149,13 @@ function _rrze_footer_layout_options() {
 
 function _rrze_header_layout_options() {
     $options = array(
-        'top-left' => array( 'value' => 'top-left', 'label' => __( 'Titel oben - links', RRZE_Theme::textdomain ) ),
-        'top-center' => array( 'value' => 'top-center', 'label' => __( 'Titel oben - zentriert', RRZE_Theme::textdomain ) ), 
-        'top-right' => array( 'value' => 'top-right', 'label' => __( 'Titel oben - rechts', RRZE_Theme::textdomain ) ),
-        'middle-left' => array( 'value' => 'middle-left', 'label' => __( 'Titel mittig - links', RRZE_Theme::textdomain ) ), 
-        'middle-right' => array( 'value' => 'middle-right', 'label' => __( 'Titel mittig - rechts', RRZE_Theme::textdomain ) ), 
-        'bottom-left' => array( 'value' => 'bottom-left', 'label' => __( 'Titel unten - links', RRZE_Theme::textdomain ) ), 
-        'bottom-right' => array( 'value' => 'bottom-right', 'label' => __( 'Titel unten - rechts', RRZE_Theme::textdomain ) ), 
+        'top-left' => array( 'value' => 'top-left', 'label' => __( 'Titel oben - links', 'blue-edgy' ) ),
+        'top-center' => array( 'value' => 'top-center', 'label' => __( 'Titel oben - zentriert', 'blue-edgy' ) ), 
+        'top-right' => array( 'value' => 'top-right', 'label' => __( 'Titel oben - rechts', 'blue-edgy' ) ),
+        'middle-left' => array( 'value' => 'middle-left', 'label' => __( 'Titel mittig - links', 'blue-edgy' ) ), 
+        'middle-right' => array( 'value' => 'middle-right', 'label' => __( 'Titel mittig - rechts', 'blue-edgy' ) ), 
+        'bottom-left' => array( 'value' => 'bottom-left', 'label' => __( 'Titel unten - links', 'blue-edgy' ) ), 
+        'bottom-right' => array( 'value' => 'bottom-right', 'label' => __( 'Titel unten - rechts', 'blue-edgy' ) ), 
     );
     
     return apply_filters( '_rrze_header_layout_options', $options );
@@ -199,75 +199,75 @@ function _rrze_default_color_style() {
     $colors = _rrze_default_color_style_data();
     $color_style = array( 
         'menu' => array( 
-            'label' => __( 'Menüfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Menüfarbe', 'blue-edgy' ),
             'color' => $colors['menu'] 
          ),
         'menu-text' => array( 
-            'label' => __( 'Menü-Textfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Menü-Textfarbe', 'blue-edgy' ),
             'color' => $colors['menu-text'] 
          ),
         'menu-hover' => array( 
-            'label' => __( 'Menü-Hover-Farbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Menü-Hover-Farbe', 'blue-edgy' ),
             'color' => $colors['menu-hover'] 
          ),
         'menu-hover-text' => array( 
-            'label' => __( 'Menü-Hover-Textfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Menü-Hover-Textfarbe', 'blue-edgy' ),
             'color' => $colors['menu-hover-text'] 
          ),
         'title' => array( 
-            'label' => __( 'Titelfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Titelfarbe', 'blue-edgy' ),
             'color' => $colors['title'] 
          ),
         'link' => array( 
-            'label' => __( 'Linkfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Linkfarbe', 'blue-edgy' ),
             'color' => $colors['link'] 
          ),        
         'hover' => array( 
-            'label' => __( 'Hover-Farbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Hover-Farbe', 'blue-edgy' ),
             'color' => $colors['hover'] 
          ),
         'hover-text' => array( 
-            'label' => __( 'Hover-Textfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Hover-Textfarbe', 'blue-edgy' ),
             'color' => $colors['hover-text'] 
          ),
         'widget-title' => array( 
-            'label' => __( 'Widget-Titel in Spalten', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Titel in Spalten', 'blue-edgy' ),
             'color' => $colors['widget-title'] 
          ),
         'widget-linien' => array( 
-            'label' => __( 'Widget-Linien in Spalten', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Linien in Spalten', 'blue-edgy' ),
             'color' => $colors['widget-linien'] 
          ),
         'widget-hover' => array( 
-            'label' => __( 'Widget-Hover-Farbe in Spalten', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Hover-Farbe in Spalten', 'blue-edgy' ),
             'color' => $colors['widget-hover'] 
          ),      
         'widget-hover-text' => array( 
-            'label' => __( 'Widget-Hover-Textfarbe in Spalten', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Hover-Textfarbe in Spalten', 'blue-edgy' ),
             'color' => $colors['widget-hover-text'] 
          ), 
         'footer-widget-title' => array( 
-            'label' => __( 'Widget-Titel im Footer', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Titel im Footer', 'blue-edgy' ),
             'color' => $colors['footer-widget-title'] 
          ),
          'footer-widget-text' => array( 
-            'label' => __( 'Widget-Textfarbe im Footer', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Textfarbe im Footer', 'blue-edgy' ),
             'color' => $colors['footer-widget-text'] 
          ),
         'footer-widget-linien' => array( 
-            'label' => __( 'Widget-Linien im Footer', RRZE_Theme::textdomain ),
+            'label' => __( 'Widget-Linien im Footer', 'blue-edgy' ),
             'color' => $colors['footer-widget-linien'] 
          ),
         'footer-hover' => array( 
-            'label' => __( 'Hover-Farbe im Footer', RRZE_Theme::textdomain ),
+            'label' => __( 'Hover-Farbe im Footer', 'blue-edgy' ),
             'color' => $colors['footer-hover'] 
          ),     
          'footer-hover-text' => array( 
-            'label' => __( 'Hover-Textfarbe im Footer', RRZE_Theme::textdomain ),
+            'label' => __( 'Hover-Textfarbe im Footer', 'blue-edgy' ),
             'color' => $colors['footer-hover-text'] 
          ),        
         'background' => array( 
-            'label' => __( 'Hintergrundfarbe', RRZE_Theme::textdomain ),
+            'label' => __( 'Hintergrundfarbe', 'blue-edgy' ),
             'color' => $colors['background'] 
          )        
     );
@@ -279,55 +279,55 @@ function _rrze_color_schema_options() {
     $options = array(
         'grau' => array(
             'value' => 'grau',
-            'label' => __( 'Grau', RRZE_Theme::textdomain ),
+            'label' => __( 'Grau', 'blue-edgy' ),
             'colors' => array( 'menu' => '#222222', 'menu-text' => '#ffffff', 'menu-hover' => '#515151', 'menu-hover-text' => '#ffffff', 'title' => '#444444', 'link' => '#020202', 'hover' => '#515151', 'hover-text' => '#ffffff', 'widget-title' => '#444444', 'widget-linien' => '#DDDDDD', 'widget-hover' => '#888888', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#9E9E9E', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#686868', 'footer-hover' => '#303030', 'footer-hover-text' => '#ffffff', 'background' => '#7A7A7A' ),
         ),
         
         'blau' => array(
             'value' => 'blau',
-            'label' => __( 'Blau', RRZE_Theme::textdomain ),
+            'label' => __( 'Blau', 'blue-edgy' ),
             'colors' => array( 'menu' => '#00425F', 'menu-text' => '#ffffff', 'menu-hover' => '#005D85', 'menu-hover-text' => '#ffffff', 'title' => '#00425F', 'link' => '#00425F', 'hover' => '#005D85', 'hover-text' => '#ffffff', 'widget-title' => '#00425F', 'widget-linien' => '#B3C6CE', 'widget-hover' => '#6B8EAD', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#D0D0D0', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#006F9F', 'footer-hover' => '#005D85', 'footer-hover-text' => '#ffffff', 'background' => '#D4D7D9' ),
         ),
             
         'gruen' => array(
             'value' => 'gruen',
-            'label' => __( 'Grün', RRZE_Theme::textdomain ),
+            'label' => __( 'Grün', 'blue-edgy' ),
             'colors' => array( 'menu' => '#006600', 'menu-text' => '#ffffff', 'menu-hover' => '#0E510E', 'menu-hover-text' => '#ffffff', 'title' => '#006600', 'link' => '#006600', 'hover' => '#0E510E', 'hover-text' => '#ffffff', 'widget-title' => '#366636', 'widget-linien' => '#8BB797', 'widget-hover' => '#6F9977', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#829985', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#829985', 'footer-hover' => '#55754D', 'footer-hover-text' => '#ffffff', 'background' => '#E9E7D7' ),
         ),
         
         'rot' => array(
             'value' => 'rot',
-            'label' => __( 'Rot', RRZE_Theme::textdomain ),
+            'label' => __( 'Rot', 'blue-edgy' ),
             'colors' => array( 'menu' => '#AF290D', 'menu-text' => '#ffffff', 'menu-hover' => '#B35B22', 'menu-hover-text' => '#ffffff', 'title' => '#B35B22', 'link' => '#B35B22', 'hover' => '#B35B22', 'hover-text' => '#ffffff', 'widget-title' => '#B35B22', 'widget-linien' => '#B29C8E', 'widget-hover' => '#B2876B', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#B29C8E', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#B29C8E', 'footer-hover' => '#B27349', 'footer-hover-text' => '#ffffff', 'background' => '#BCA279' ),
         ),  
         
         'nat_fak' => array(
             'value' => 'nat_fak',
-            'label' => __( 'FAU - Nat. Fak.', RRZE_Theme::textdomain ),
+            'label' => __( 'FAU - Nat. Fak.', 'blue-edgy' ),
             'colors' => array( 'menu' => '#048767', 'menu-text' => '#ffffff', 'menu-hover' => '#006e53', 'menu-hover-text' => '#ffffff', 'title' => '#048767', 'link' => '#006e53', 'hover' => '#006e53', 'hover-text' => '#ffffff', 'widget-title' => '#048767', 'widget-linien' => '#006e53', 'widget-hover' => '#048767', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#006e53', 'footer-hover' => '#00533f', 'footer-hover-text' => '#ffffff', 'background' => '#e5efea' ),
         ),
         
         'phil_fak' => array(
             'value' => 'phil_fak',
-            'label' => __( 'FAU - Phil. Fak.', RRZE_Theme::textdomain ),
+            'label' => __( 'FAU - Phil. Fak.', 'blue-edgy' ),
             'colors' => array( 'menu' => '#a36b0d', 'menu-text' => '#ffffff', 'menu-hover' => '#805000', 'menu-hover-text' => '#ffffff', 'title' => '#a36b0d', 'link' => '#805000', 'hover' => '#805000', 'hover-text' => '#ffffff', 'widget-title' => '#a36b0d', 'widget-linien' => '#805000', 'widget-hover' => '#a36b0d', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#805000', 'footer-hover' => '#553500', 'footer-hover-text' => '#ffffff', 'background' => '#f3eedf' ),
         ),
         
         'rewi_fak' => array(
             'value' => 'rewi_fak',
-            'label' => __( 'FAU - ReWi. Fak.', RRZE_Theme::textdomain ),
+            'label' => __( 'FAU - ReWi. Fak.', 'blue-edgy' ),
             'colors' => array( 'menu' => '#8d1429', 'menu-text' => '#ffffff', 'menu-hover' => '#690013', 'menu-hover-text' => '#ffffff', 'title' => '#8d1429', 'link' => '#690013', 'hover' => '#690013', 'hover-text' => '#ffffff', 'widget-title' => '#8d1429', 'widget-linien' => '#690013', 'widget-hover' => '#8d1429', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#690013', 'footer-hover' => '#42000c', 'footer-hover-text' => '#ffffff', 'background' => '#ede7de' ),
         ),
         
         'med_fak' => array(
             'value' => 'med_fak',
-            'label' => __( 'FAU - Med. Fak.', RRZE_Theme::textdomain ),
+            'label' => __( 'FAU - Med. Fak.', 'blue-edgy' ),
             'colors' => array( 'menu' => '#0381A2', 'menu-text' => '#ffffff', 'menu-hover' => '#026480', 'menu-hover-text' => '#ffffff', 'title' => '#0381A2', 'link' => '#026480', 'hover' => '#026480', 'hover-text' => '#ffffff', 'widget-title' => '#0381A2', 'widget-linien' => '#026480', 'widget-hover' => '#0381A2', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#026480', 'footer-hover' => '#014e63', 'footer-hover-text' => '#ffffff', 'background' => '#eaf3fc' ),
         ),
         
         'fau' => array(
             'value' => 'fau',
-            'label' => __( 'FAU', RRZE_Theme::textdomain ),
+            'label' => __( 'FAU', 'blue-edgy' ),
             'colors' => array( 'menu' => '#003366', 'menu-text' => '#ffffff', 'menu-hover' => '#24598f', 'menu-hover-text' => '#ffffff', 'title' => '#003366', 'link' => '#24598f', 'hover' => '#24598f', 'hover-text' => '#ffffff', 'widget-title' => '#003366', 'widget-linien' => '#24598f', 'widget-hover' => '#003366', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#24598f', 'footer-hover' => '#1f4c7a', 'footer-hover-text' => '#ffffff', 'background' => '#dde5f0' ),
         ),
         
@@ -340,12 +340,12 @@ function _rrze_blogoverview_options() {
     $options = array(
         'rrze_content' => array(
             'value' => 'rrze_content',
-            'label' => __( 'als vollständigen Artikel', RRZE_Theme::textdomain )
+            'label' => __( 'als vollständigen Artikel', 'blue-edgy' )
         ),
         
         'rrze_excerpt' => array(
             'value' => 'rrze_excerpt',
-            'label' => __( 'als kurze Vorschau', RRZE_Theme::textdomain )
+            'label' => __( 'als kurze Vorschau', 'blue-edgy' )
         )
         
     );
@@ -355,11 +355,11 @@ function _rrze_blogoverview_options() {
 
 function _rrze_teaserimage_options() {
     $options = array(
-	1 => array ('value' => '1', 'label' => __('Ausgewähltes Bild > erstes Bild > erstes Video > Standardbild', RRZE_Theme::textdomain)),
-	2 => array ('value' => '2', 'label' => __('Erstes Bild > ausgewähltes Bild > erstes Video > Standardbild', RRZE_Theme::textdomain)),
-	3 => array ('value' => '3', 'label' => __('Erstes Video > ausgewähltes Bild > erstes Bild > Standardbild', RRZE_Theme::textdomain)),
-	4 => array ('value' => '4', 'label' => __('Erstes Video > erstes Bild > ausgewähltes Bild > Standardbild', RRZE_Theme::textdomain)),
-	5 => array ('value' => '5', 'label' => __('Kein Teaser-Bild', RRZE_Theme::textdomain))
+	1 => array ('value' => '1', 'label' => __('Ausgewähltes Bild > erstes Bild > erstes Video > Standardbild', 'blue-edgy')),
+	2 => array ('value' => '2', 'label' => __('Erstes Bild > ausgewähltes Bild > erstes Video > Standardbild', 'blue-edgy')),
+	3 => array ('value' => '3', 'label' => __('Erstes Video > ausgewähltes Bild > erstes Bild > Standardbild', 'blue-edgy')),
+	4 => array ('value' => '4', 'label' => __('Erstes Video > erstes Bild > ausgewähltes Bild > Standardbild', 'blue-edgy')),
+	5 => array ('value' => '5', 'label' => __('Kein Teaser-Bild', 'blue-edgy'))
     );
     return apply_filters('_rrze_teaserimage_options', $options);
 }
@@ -368,12 +368,12 @@ function _rrze_teaserimage_default_options() {
     $options = array(
         true => array(
             'value' => 1,
-            'label' => __( 'Platzhalter anzeigen', RRZE_Theme::textdomain )
+            'label' => __( 'Platzhalter anzeigen', 'blue-edgy' )
         ),
         
         false => array(
             'value' => 0,
-            'label' => __( 'kein Bild anzeigen', RRZE_Theme::textdomain )
+            'label' => __( 'kein Bild anzeigen', 'blue-edgy' )
         )
         
     );
@@ -382,20 +382,20 @@ function _rrze_teaserimage_default_options() {
 }
 
 function _rrze_section_layout_callback() {
-    printf( '<p>%s</p>', __( 'Wählen Sie, welche Optionen Sie aktivieren möchten.', RRZE_Theme::textdomain ) );
+    printf( '<p>%s</p>', __( 'Wählen Sie, welche Optionen Sie aktivieren möchten.', 'blue-edgy' ) );
 }
 
 function _rrze_section_typography_callback() {
-    printf( '<p>%s</p>', __( 'Wählen Sie, welche Schriftart Sie aktivieren möchten.', RRZE_Theme::textdomain ) );
+    printf( '<p>%s</p>', __( 'Wählen Sie, welche Schriftart Sie aktivieren möchten.', 'blue-edgy' ) );
 }
 
 function _rrze_section_color_style_callback() {
-    printf( '<p>%s</p>', __( 'Wählen Sie, welches Farbschema Sie aktivieren möchten.', RRZE_Theme::textdomain ) );
+    printf( '<p>%s</p>', __( 'Wählen Sie, welches Farbschema Sie aktivieren möchten.', 'blue-edgy' ) );
 }
 
 function _rrze_section_overview_callback() {
-    printf( '<p>%s</p>', __( 'Wählen Sie, ob auf der Übersichtsseite die vollständigen Beiträge oder nur Auszüge angezeigt werden sollen.', RRZE_Theme::textdomain ) );
-    printf( '<p>%s</p>', __( 'Wenn Sie eine Vorschau anzeigen lassen und der Beitrag keinen Auszug besitzt, wird der Artikel gekürzt dargestellt. Die Anzahl der angezeigten Wörter können Sie unten festlegen.', RRZE_Theme::textdomain ) );
+    printf( '<p>%s</p>', __( 'Wählen Sie, ob auf der Übersichtsseite die vollständigen Beiträge oder nur Auszüge angezeigt werden sollen.', 'blue-edgy' ) );
+    printf( '<p>%s</p>', __( 'Wenn Sie eine Vorschau anzeigen lassen und der Beitrag keinen Auszug besitzt, wird der Artikel gekürzt dargestellt. Die Anzahl der angezeigten Wörter können Sie unten festlegen.', 'blue-edgy' ) );
 }
 
 function _rrze_field_searchform_callback() {
@@ -444,7 +444,7 @@ function _rrze_field_footer_layout_callback() {
             
             $groups = array_unique($groups);
             foreach($groups as $group) {
-                $html .= '<optgroup label="'. esc_attr($group). ' ' .esc_attr( _n( 'Spalte', 'Spalten', $group, RRZE_Theme::textdomain ) ) . '" rel="' . esc_attr($group) . '">';
+                $html .= '<optgroup label="'. esc_attr($group). ' ' .esc_attr( _n( 'Spalte', 'Spalten', $group, 'blue-edgy' ) ) . '" rel="' . esc_attr($group) . '">';
                 foreach ( _rrze_footer_layout_options() as $option ) {
                     if($option['group'] == $group) {
                         $html .= '<option value="'.esc_attr($option['value']).'"'.($selected == $option['value'] ? ' selected="selected"' : '').'>'.esc_attr($option['label']).'</option>';
@@ -598,7 +598,7 @@ function _rrze_field_color_schema_callback() {
             
             $color_schema_options[$color_schema] = array(
                 'value' => $color_schema,
-                'label' => __( 'Benutzerdefiniertes', RRZE_Theme::textdomain ),
+                'label' => __( 'Benutzerdefiniertes', 'blue-edgy' ),
                 'colors' => $custom_colors
             );
             
@@ -649,7 +649,7 @@ function _rrze_field_wordsoverview_callback() {
 	$options = RRZE_Theme::$theme_options;
 	?>
     <input type="text" class="regular-text" name="_rrze_theme_options[words.overview]" value="<?php echo esc_attr($options['words.overview']); ?>" />
-    <?php printf ('<span class="description">%s</span>', __('Lassen Sie die Anzeige leer, um den Standardwert wieder herzustellen.', RRZE_Theme::textdomain)); ?>
+    <?php printf ('<span class="description">%s</span>', __('Lassen Sie die Anzeige leer, um den Standardwert wieder herzustellen.', 'blue-edgy')); ?>
     
 	<?php
 }
@@ -669,7 +669,7 @@ function _rrze_field_teaserimage_callback() {
             echo $html;
 		?>
 	</select>
-       <?php printf ('<span class="description">%s</span>', __('Links des Textauszugs wird das Beitragsbild, ein Bild des Artikels, ein verlinktes Video oder ein Standardbild angezeigt (wenn vorhanden).', RRZE_Theme::textdomain)); ?>
+       <?php printf ('<span class="description">%s</span>', __('Links des Textauszugs wird das Beitragsbild, ein Bild des Artikels, ein verlinktes Video oder ein Standardbild angezeigt (wenn vorhanden).', 'blue-edgy')); ?>
 	<?php
 }
 
@@ -679,10 +679,10 @@ function _rrze_field_teaserimage_default_callback() {
         if ((isset($options[$name])) && esc_url( $options[$name])) { 
             echo '<div class="previewimage showimg">';
 		echo '<img src="'.esc_url( $options[$name]).'"/>';
-                printf ('<span class="description">%s</span>', __('Platzhalter-Bild für Vorschau', RRZE_Theme::textdomain));
+                printf ('<span class="description">%s</span>', __('Platzhalter-Bild für Vorschau', 'blue-edgy'));
                 echo '</div>';
 	} else {
-		_e('Es ist kein Platzhalter-Bild vorhanden.', RRZE_Theme::textdomain);
+		_e('Es ist kein Platzhalter-Bild vorhanden.', 'blue-edgy');
 	}				   
 	foreach (_rrze_teaserimage_default_options() as $button ):
 	?>
@@ -702,7 +702,7 @@ function _rrze_theme_options_menu_page() {
     ?>
     <div class="wrap">
 
-        <h2><?php _e( 'Einstellungen', RRZE_Theme::textdomain );?></h2>
+        <h2><?php _e( 'Einstellungen', 'blue-edgy' );?></h2>
         <?php settings_errors(); ?>
         <h2 class="nav-tab-wrapper">
             <?php foreach( $pages as $page):
@@ -863,7 +863,7 @@ add_action( 'customize_register', function( $wp_customize ) {
     
     // column.layout
 	$wp_customize->add_section( '_rrze_theme_layout', array(
-		'title'    => __( 'Layout', RRZE_Theme::textdomain ),
+		'title'    => __( 'Layout', 'blue-edgy' ),
 		'priority' => 100,
 	) );
     
@@ -880,7 +880,7 @@ add_action( 'customize_register', function( $wp_customize ) {
 	}
 
 	$wp_customize->add_control( '_rrze_theme_options_columns_layout', array(
-        'label'      => __( 'Spalten', RRZE_Theme::textdomain ),        
+        'label'      => __( 'Spalten', 'blue-edgy' ),        
 		'section'    => '_rrze_theme_layout',
 		'type'       => 'radio',
 		'choices'    => $choices,
@@ -902,7 +902,7 @@ add_action( 'customize_register', function( $wp_customize ) {
 	}
 
 	$wp_customize->add_control( '_rrze_theme_options_footer_layout', array(
-        'label'      => __( 'Footer (Widgets)', RRZE_Theme::textdomain ),        
+        'label'      => __( 'Footer (Widgets)', 'blue-edgy' ),        
 		'section'    => '_rrze_theme_layout',
 		'type'       => 'select',
 		'choices'    => $choices,

@@ -4,12 +4,14 @@ add_action( 'after_switch_theme', array('RRZE_Check_Theme', 'check_theme_setup')
 
 class RRZE_Check_Theme {
     const theme_name = 'blue_edgy';
-    const textdomain = '_rrze';
-    const php_version = '5.3'; // Minimal erforderliche PHP-Version
-    const wp_version = '3.9'; // Minimal erforderliche WordPress-Version
+    const textdomain = 'blue-edgy';
+    const php_version = '7.4'; // Minimal erforderliche PHP-Version
+    const wp_version = '5.4'; // Minimal erforderliche WordPress-Version
     public static $check_error = NULL;
 
     public static function check_theme_setup() { 
+        load_theme_textdomain('blue-edgy', get_template_directory() . '/languages');
+
         $old_theme = get_option('theme_switched');
         self::$check_error = self::version_compare();
         if (self::$check_error) {
@@ -26,11 +28,11 @@ class RRZE_Check_Theme {
         $error = '';
 
         if (version_compare(PHP_VERSION, self::php_version, '<')) {
-            $error = sprintf(__('Ihre PHP-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die PHP-Version %s.', self::textdomain), PHP_VERSION, self::php_version);
+            $error = sprintf(__('Ihre PHP-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die PHP-Version %s.', 'blue-edgy'), PHP_VERSION, self::php_version);
         }
 
         if (version_compare($GLOBALS['wp_version'], self::wp_version, '<')) {
-            $error = sprintf(__('Ihre Wordpress-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die Wordpress-Version %s.', self::textdomain), $GLOBALS['wp_version'], self::wp_version);
+            $error = sprintf(__('Ihre Wordpress-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die Wordpress-Version %s.', 'blue-edgy'), $GLOBALS['wp_version'], self::wp_version);
         }
 
         if (!empty($error)) {
@@ -42,7 +44,7 @@ class RRZE_Check_Theme {
         if (self::$check_error) {
             echo '<div class="error">' . self::$check_error . '</div>';
         }
-        echo '<div class="error">' . __('Das Theme konnte nicht aktiviert werden.', self::textdomain ) . '</div>';
+        echo '<div class="error">' . __('Das Theme konnte nicht aktiviert werden.', 'blue-edgy' ) . '</div>';
     }
 
 }
@@ -51,10 +53,10 @@ add_action('after_setup_theme', array('RRZE_Theme', 'instance'));
 
 class RRZE_Theme {
 
-    const version = '2.0'; // Theme-Version
+    const version = '2.2.0'; // Theme-Version
     const version_option_name = '_rrze_theme_version';
     const option_name = '_rrze_theme_options';
-    const textdomain = '_rrze';
+    const textdomain = 'blue-edgy';
 
     protected static $instance = NULL;
     
@@ -75,6 +77,8 @@ class RRZE_Theme {
     }
 
     public function after_setup_theme() {
+        load_theme_textdomain('blue-edgy', get_template_directory() . '/languages');
+
         if (get_option('check_error_' . RRZE_Check_Theme::theme_name)) {  
             return;
         }            
@@ -88,10 +92,6 @@ class RRZE_Theme {
         require_once( get_template_directory() . '/includes/shortcodes.php' );
         require_once( get_template_directory() . '/includes/widgets.php');
         require_once( get_template_directory() . '/includes/tinymce.php' );
-
-        // The .mo files must use language-only filenames, like languages/de_DE.mo in your theme directory.
-        // Unlike plugin language files, a text domain name like _rrze-de_DE.mo will NOT work.
-        load_theme_textdomain(self::textdomain, get_template_directory() . '/languages');
         
         self::$default_theme_options = $this->default_theme_options();
         self::$theme_options = $this->theme_options();
@@ -188,22 +188,22 @@ class RRZE_Theme {
         $pages = array( 
             'layout.options' => array( 
                 'value' => 'layout.options', 
-                'label' => __('Layout', self::textdomain )
+                'label' => __('Layout', 'blue-edgy' )
             ),
 
             'typography.options' => array( 
                 'value' => 'typography.options', 
-                'label' => __('Schriftart', self::textdomain )
+                'label' => __('Schriftart', 'blue-edgy' )
             ),
 
             'color.options' => array( 
                 'value' => 'color.options', 
-                'label' => __('Farben', self::textdomain )
+                'label' => __('Farben', 'blue-edgy' )
             ),
 
             'overview.options' => array(
                 'value' => 'overview.options',
-                'label' => __('Blogdarstellung', self::textdomain)
+                'label' => __('Blogdarstellung', 'blue-edgy')
             )
 
         );
@@ -218,7 +218,7 @@ class RRZE_Theme {
             '_titel_ausblenden' => array(
                 'name' => '_titel_ausblenden',
                 'default' => '0',
-                'title' => __( 'Titel ausblenden', self::textdomain ),
+                'title' => __( 'Titel ausblenden', 'blue-edgy' ),
                 'description' => '',
                 'type' => 'checkbox',
                 'location' => 'page')
@@ -325,16 +325,16 @@ class RRZE_Theme {
             'grau' => array(
                 'url' => '%2$s/images/headers/grau-header.jpg',
                 'thumbnail_url' => '%2$s/images/headers/grau-thumbnail.jpg',
-                'description' => __('Grau', self::textdomain)
+                'description' => __('Grau', 'blue-edgy')
             )
         ));        
     }
     
     private function register_nav_menu() {
-        register_nav_menu('bereichsmenu', __('Bereichsmenü', self::textdomain));
+        register_nav_menu('bereichsmenu', __('Bereichsmenü', 'blue-edgy'));
 
         if( ! is_blogs_fau_de() ) {
-            register_nav_menu( 'tecmenu', __( 'Technisches Menü', self::textdomain ) );
+            register_nav_menu( 'tecmenu', __( 'Technisches Menü', 'blue-edgy' ) );
         }        
     }
     
@@ -351,9 +351,9 @@ class RRZE_Theme {
     
     private function register_sidebar() {
         register_sidebar( array(
-            'name' => __( 'Sidebar links', self::textdomain ),
+            'name' => __( 'Sidebar links', 'blue-edgy' ),
             'id' => 'sidebar-left',
-            'description'   => __( 'Dieser Bereich ist für die Menüs und die Widgets vorgesehen.', self::textdomain ),
+            'description'   => __( 'Dieser Bereich ist für die Menüs und die Widgets vorgesehen.', 'blue-edgy' ),
             'before_widget' => '<div id="%1$s" class="widget-wrapper ym-vlist %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h6 class="widget-title">',
@@ -361,9 +361,9 @@ class RRZE_Theme {
         ) );
 
         register_sidebar( array(
-            'name' => __( 'Sidebar rechts', self::textdomain ),
+            'name' => __( 'Sidebar rechts', 'blue-edgy' ),
             'id' => 'sidebar-right',
-            'description'   => __( 'Dieser Bereich ist für die Menüs und die Widgets vorgesehen.', self::textdomain ),
+            'description'   => __( 'Dieser Bereich ist für die Menüs und die Widgets vorgesehen.', 'blue-edgy' ),
             'before_widget' => '<div class="widget-wrapper ym-vlist">',
             'after_widget' => '</div>',
             'before_title' => '<h6 class="widget-title">',
@@ -371,9 +371,9 @@ class RRZE_Theme {
         ));
 
         register_sidebar( array(
-            'name' => __( 'Footer-Sidebar links', self::textdomain ),
+            'name' => __( 'Footer-Sidebar links', 'blue-edgy' ),
             'id' => 'sidebar-footer-left',
-            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer links) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', self::textdomain ),
+            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer links) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', 'blue-edgy' ),
             'before_widget' => '<div id="%1$s" class="widget-wrapper ym-vlist %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h6 class="widget-title">',
@@ -381,9 +381,9 @@ class RRZE_Theme {
         ));
 
         register_sidebar( array(
-            'name' => __( 'Footer-Sidebar mitte', self::textdomain ),
+            'name' => __( 'Footer-Sidebar mitte', 'blue-edgy' ),
             'id' => 'sidebar-footer-center',
-            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer mitte) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', self::textdomain ),
+            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer mitte) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', 'blue-edgy' ),
             'before_widget' => '<div id="%1$s" class="widget-wrapper ym-vlist %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h6 class="widget-title">',
@@ -391,9 +391,9 @@ class RRZE_Theme {
         ));
 
         register_sidebar( array(
-            'name' => __( 'Footer-Sidebar rechts', self::textdomain ),
+            'name' => __( 'Footer-Sidebar rechts', 'blue-edgy' ),
             'id' => 'sidebar-footer-right',
-            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer rechts) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', self::textdomain ),
+            'description'   => __( 'Dieser Bereich ist für die Zusatzinformationen (im Footer rechts) vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!', 'blue-edgy' ),
             'before_widget' => '<div id="%1$s" class="widget-wrapper ym-vlist %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h6 class="widget-title">',
@@ -517,7 +517,7 @@ class RRZE_Theme {
             }
             add_meta_box(
                     'more_meta'
-                    ,__('Weitere Einstellungen', self::textdomain)
+                    ,__('Weitere Einstellungen', 'blue-edgy')
                     , array($this, $new_meta_boxes)
                     , $post_type
                     , 'normal'
@@ -649,14 +649,14 @@ class RRZE_Theme {
         if ($post->post_type == "nav_menu_item") return;
 
         if(empty($post->post_title)) {
-            $error = __('Sie haben noch keinen Titel eingegeben.', self::textdomain);
+            $error = __('Sie haben noch keinen Titel eingegeben.', 'blue-edgy');
             // set transient for admin notice
             set_transient($this->transient_hash(), $error, 15 * MINUTE_IN_SECONDS);
 
             // OPTIONAL
 
             // set placeholder for empty title
-            $title = __('Dokument ohne Titel', self::textdomain);
+            $title = __('Dokument ohne Titel', 'blue-edgy');
             
             // unhook this function so it doesn't loop infinitely
             remove_action('save_post', array($this, 'save_title'));
