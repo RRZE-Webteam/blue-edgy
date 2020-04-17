@@ -1,13 +1,14 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Blue Edgy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-17 10:41+0000\n"
-"PO-Revision-Date: 2020-04-17 10:41+0000\n"
-"Last-Translator: \n"
-"Language-Team: English (United States)\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,8 +21,6 @@ msgid ""
 "Ihre PHP-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die "
 "PHP-Version %s."
 msgstr ""
-"Your server is running PHP version %s. Please upgrade at least to PHP "
-"version %s."
 
 #: functions.php:35
 #, php-format
@@ -29,60 +28,58 @@ msgid ""
 "Ihre Wordpress-Version %s ist veraltet. Bitte aktualisieren Sie mindestens "
 "auf die Wordpress-Version %s."
 msgstr ""
-"Your Wordpress version is %s. Please upgrade at least to Wordpress version "
-"%s."
 
 #: functions.php:47
 msgid "Das Theme konnte nicht aktiviert werden."
-msgstr "Theme couldn't be activated."
+msgstr ""
 
 #: functions.php:191 includes/theme-options.php:866
 msgid "Layout"
-msgstr "Layout"
+msgstr ""
 
 #: functions.php:196 includes/theme-options.php:51
 msgid "Schriftart"
-msgstr "Font"
+msgstr ""
 
 #: functions.php:201
 msgid "Farben"
-msgstr "Colors"
+msgstr ""
 
 #: functions.php:206
 msgid "Blogdarstellung"
-msgstr "Blog Settings"
+msgstr ""
 
 #: functions.php:221
 msgid "Titel ausblenden"
-msgstr "Hide title"
+msgstr ""
 
 #: functions.php:328 includes/theme-options.php:282
 msgid "Grau"
-msgstr "Gray"
+msgstr ""
 
 #: functions.php:334 header.php:64 includes/theme-options.php:96
 msgid "Bereichsmenü"
-msgstr "Area menu"
+msgstr ""
 
 #: functions.php:337 footer.php:7
 msgid "Technisches Menü"
-msgstr "Technical menu"
+msgstr ""
 
 #: functions.php:354
 msgid "Sidebar links"
-msgstr "Sidebar left"
+msgstr ""
 
 #: functions.php:356 functions.php:366
 msgid "Dieser Bereich ist für die Menüs und die Widgets vorgesehen."
-msgstr "This area is intended for the menus and widgets."
+msgstr ""
 
 #: functions.php:364
 msgid "Sidebar rechts"
-msgstr "Sidebar right"
+msgstr ""
 
 #: functions.php:374
 msgid "Footer-Sidebar links"
-msgstr "Footer Sidebar left"
+msgstr ""
 
 #: functions.php:376
 msgid ""
@@ -91,13 +88,10 @@ msgid ""
 "jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe "
 "auf dem Drucker nicht mit ausgegeben!"
 msgstr ""
-"This area is intended for additional information (in the footer on the left)."
-" Here could be useful links and other information is available, which should "
-"be displayed on each page. This information will not be sent to the printer!"
 
 #: functions.php:384
 msgid "Footer-Sidebar mitte"
-msgstr "Footer Sidebar center"
+msgstr ""
 
 #: functions.php:386
 msgid ""
@@ -106,13 +100,10 @@ msgid ""
 "jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe "
 "auf dem Drucker nicht mit ausgegeben!"
 msgstr ""
-"This area is intended for additional information (in the footer center). "
-"Here could be useful links and other information is available, which should "
-"be displayed on each page. This information will not be sent to the printer!"
 
 #: functions.php:394
 msgid "Footer-Sidebar rechts"
-msgstr "Footer Sidebar right"
+msgstr ""
 
 #: functions.php:396
 msgid ""
@@ -121,22 +112,18 @@ msgid ""
 "auf jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der "
 "Ausgabe auf dem Drucker nicht mit ausgegeben!"
 msgstr ""
-"This area is intended for additional information (in the footer on the right)"
-". Here could be useful links and other information is available, which "
-"should be displayed on each page. This information will not be sent to the "
-"printer!"
 
 #: functions.php:520
 msgid "Weitere Einstellungen"
-msgstr "More Settings"
+msgstr ""
 
 #: functions.php:652
 msgid "Sie haben noch keinen Titel eingegeben."
-msgstr "Please enter a title."
+msgstr ""
 
 #: functions.php:659
 msgid "Dokument ohne Titel"
-msgstr "Document without title"
+msgstr ""
 
 #: content-gallery.php:3 content-gallery.php:32 content-status.php:4
 #: content.php:4 content.php:6 content.php:28 content.php:35
@@ -144,49 +131,49 @@ msgstr "Document without title"
 #: content-image.php:4
 #, php-format
 msgid "Permalink zu %s"
-msgstr "Permalink for %s"
+msgstr ""
 
 #: content-gallery.php:15 content-single.php:15 content-status.php:17
 #: content-page.php:13 content-aside.php:21 content-quote.php:15
 #: content-link.php:21 content-image.php:16
 msgid "Weiterlesen <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: content-gallery.php:31
 #, php-format
 msgid "Diese Galerie enthält <a %1$s>%2$s Bild</a>."
 msgid_plural "Diese Galerie enthält <a %1$s>%2$s Bilder</a>."
-msgstr[0] "This gallery contains <a %1$s>%2$s image</a>."
-msgstr[1] "This gallery contains <a %1$s>%2$s images</a>."
+msgstr[0] ""
+msgstr[1] ""
 
 #: content-gallery.php:39 content-single.php:16 content-status.php:18
 #: content-page.php:14 content.php:37 content-aside.php:22 content-quote.php:16
 #: content-link.php:22 content-image.php:17
 msgid "Seiten:"
-msgstr "Pages:"
+msgstr ""
 
 #: content-gallery.php:45 content-status.php:25 content.php:43
 #: content-aside.php:29 content-quote.php:23 content-link.php:29
 #: content-image.php:23 includes/theme-tags.php:125
 msgid "Kommentar hinterlassen"
-msgstr "Leave a comment"
+msgstr ""
 
 #: content-gallery.php:45 content-status.php:25 content.php:43
 #: content-aside.php:29 content-quote.php:23 content-link.php:29
 #: content-image.php:23
 msgid "<b>1</b> Kommentar"
-msgstr "One comment so far"
+msgstr ""
 
 #: content-gallery.php:45 content-status.php:25 content.php:43
 #: content-aside.php:29 content-quote.php:23 content-link.php:29
 #: content-image.php:23
 msgid "<b>%</b> Kommentare"
-msgstr "View all % comments"
+msgstr ""
 
 #: content-single.php:1 404.php:6 content-index.php:1 content-page.php:1
 #: content-search.php:2
 msgid "Inhalt"
-msgstr "Content"
+msgstr ""
 
 #: content-single.php:26
 #, php-format
@@ -194,580 +181,572 @@ msgid ""
 "Dieser Eintrag wurde veröffentlicht in %1$s und verschlagwortet mit %2$s von "
 "<a href=\"%4$s\">%3$s</a>."
 msgstr ""
-"This entry was posted in %1$s and tagged %2$s by <a href=\"%4$s\">%3$s</a>."
 
 #: content-single.php:28
 #, php-format
 msgid ""
 "Dieser Eintrag wurde veröffentlicht in %1$s von <a href=\"%4$s\">%3$s</a>."
-msgstr "This entry was posted in %1$s by <a href=\"%4$s\">%3$s</a>."
+msgstr ""
 
 #: content-single.php:30
 #, php-format
 msgid "Dieser Eintrag wurde von <a href=\"%4$s\">%3$s</a> veröffentlicht."
-msgstr "This entry was posted by <a href=\"%4$s\">%3$s</a>."
+msgstr ""
 
 #: content-single.php:38 content-page.php:18 content-univis.php:19
 #: content-person.php:13
 msgid "(Bearbeiten)"
-msgstr "(Edit)"
+msgstr ""
 
 #: content-single.php:46
 msgid "Artikelnavigation"
-msgstr "Post navigation"
+msgstr ""
 
 #: content-single.php:47 includes/theme-tags.php:74
 msgid "<span class=\"meta-nav\">&larr;</span> Vorherige"
-msgstr "<span class=\"meta-nav\">&larr;</span> Previous post link"
+msgstr ""
 
 #: content-single.php:48 includes/theme-tags.php:75
 msgid "Nächste <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Next post link <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: 404.php:9
 msgid "Seite nicht gefunden"
-msgstr "Page not found"
+msgstr ""
 
 #: 404.php:13
 msgid ""
 "Ihre Suche war leider erfolglos. Vielleicht hilft die Suchfunktion oder "
 "einer der unten angegebenen Links das Gewünschte zu finden."
 msgstr ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching, or one of the links below, can help."
 
 #: 404.php:18
 msgid "Oft verwendete Kategorien"
-msgstr "Most Used Categories"
+msgstr ""
 
 #: 404.php:24
 msgid "Versuchen Sie es mit einem Blick in die Monatsarchive."
-msgstr "Try looking in the monthly archives."
+msgstr ""
 
 #: content-status.php:5
 msgid "Statusmitteilung"
-msgstr "Status"
+msgstr ""
 
 #: comments.php:4
 msgid ""
 "Dieser Eintrag ist passwortgeschützt. Um Kommentare anschauen zu können "
 "müssen Sie das Passwort angeben."
 msgstr ""
-"This post is password protected. Enter the password to view any comments."
 
 #: comments.php:12
 #, php-format
 msgid "Ein Kommentar zu &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
-msgstr[0] "One Response to %2$s"
-msgstr[1] "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
 
 #: comments.php:22
 msgid "Kommentare-Navigation"
-msgstr "Comment navigation"
+msgstr ""
 
 #: comments.php:23
 msgid "&larr; Ältere Kommentare"
-msgstr "&larr; Older Comments"
+msgstr ""
 
 #: comments.php:24
 msgid "Neuere Kommentare &rarr;"
-msgstr "Newer Comments &rarr;"
+msgstr ""
 
 #: comments.php:30
 msgid "Die Kommentarfunktion ist geschlossen."
-msgstr "Comments are closed."
+msgstr ""
 
 #: sidebar-right.php:4 sidebar-left.php:5
 msgid "Meta"
-msgstr "Meta"
+msgstr ""
 
 #: content.php:23
 msgid "Weiterlesen"
-msgstr "Continue reading"
+msgstr ""
 
 #: content.php:35
 msgid "Vollständigen Artikel lesen <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: content-aside.php:5
 msgid "Kurzmitteilung"
-msgstr "Post format"
+msgstr ""
 
 #: content-aside.php:10 content-link.php:10 content-image.php:10
 #: includes/theme-tags.php:118
 msgid "Kommentar"
-msgstr "Comment"
+msgstr ""
 
 #: content-aside.php:10 content-link.php:10 content-image.php:10
 msgctxt "1"
 msgid "1"
-msgstr "1"
+msgstr ""
 
 #: content-aside.php:10 content-link.php:10 content-image.php:10
 msgctxt "%"
 msgid "%"
-msgstr "%"
+msgstr ""
 
 #: header.php:23
 msgid "Zum Inhalt springen"
-msgstr "Skip to Content"
+msgstr ""
 
 #: header.php:24
 msgid "Zum Bereichsmenü springen"
-msgstr "Go to area menu"
+msgstr ""
 
 #: header.php:25
 msgid "Zu den allgemeinen Informationen springen"
-msgstr "Jump to the general information area"
+msgstr ""
 
 #: header.php:27
 msgid "Zu den Zusatzinformationen springen"
-msgstr "Jump to the additional information area"
+msgstr ""
 
 #: header.php:71
 msgid "Breadcrumb"
-msgstr "Breadcrumb"
+msgstr ""
 
 #: content-search.php:6 includes/theme-tags.php:54
 #, php-format
 msgid "Suchergebnisse für: %s"
-msgstr "Search Results for: %s"
+msgstr ""
 
 #: content-search.php:21
 msgid "Es konnte nichts gefunden werden."
-msgstr "Nothing Found."
+msgstr ""
 
 #: content-search.php:25
 msgid ""
 "Leider konnte nichts gefunden werden. Versuchen Sie es mit anderen "
 "Schlüsselwörtern erneut."
 msgstr ""
-"Sorry, but nothing matched your search criteria. Please try again with some "
-"different keywords."
 
 #: content-quote.php:5
 msgid "Zitat"
-msgstr "Quote"
+msgstr ""
 
 #: footer.php:18
 msgid "Zusatzinformationen"
-msgstr "Additional information"
+msgstr ""
 
 #: content-link.php:5
 msgid "Link"
-msgstr "Link"
+msgstr ""
 
 #: content-image.php:5
 msgid "Bild"
-msgstr "Image"
+msgstr ""
 
 #: includes/widgets.php:9
 msgid "Normaler Text oder HTML."
-msgstr "Unformatted text or HTML."
+msgstr ""
 
 #: includes/widgets.php:11
 msgid "Text"
-msgstr "Text"
+msgstr ""
 
 #: includes/widgets.php:56
 msgid "Titel:"
-msgstr "Title:"
+msgstr ""
 
 #: includes/widgets.php:61
 msgid "Inhalt mittig ausrichten"
-msgstr "Center content"
+msgstr ""
 
 #: includes/widgets.php:63
 msgid "Fußlinie nicht anzeigen"
-msgstr "Don't show bottom border"
+msgstr ""
 
 #: includes/widgets.php:67
 msgid "Absätze automatisch hinzufügen"
-msgstr "Automatically add paragraphs"
+msgstr ""
 
 #: includes/theme-options.php:16 includes/theme-options.php:705
 msgid "Einstellungen"
-msgstr "Settings"
+msgstr ""
 
 #: includes/theme-options.php:38
 msgid "Layouteinstellungen"
-msgstr "Layout Settings"
+msgstr ""
 
 #: includes/theme-options.php:40
 msgid "Seitenlayout"
-msgstr "Page Layout"
+msgstr ""
 
 #: includes/theme-options.php:42
 msgid "Header-Layout"
-msgstr "Header Layout"
+msgstr ""
 
 #: includes/theme-options.php:44
 msgid "Footer-Layout"
-msgstr "Footer Layout"
+msgstr ""
 
 #: includes/theme-options.php:46
 msgid "Position des Suchformulars"
-msgstr "Position of the search form"
+msgstr ""
 
 #: includes/theme-options.php:53
 msgid "Allgemein"
-msgstr "General"
+msgstr ""
 
 #: includes/theme-options.php:55
 msgid "Überschrift"
-msgstr "Heading"
+msgstr ""
 
 #: includes/theme-options.php:57
 msgid "Menü"
-msgstr "Menu"
+msgstr ""
 
 #: includes/theme-options.php:59
 msgid "Widget-Titel"
-msgstr "Widget Title"
+msgstr ""
 
 #: includes/theme-options.php:61
 msgid "Widget-Inhalt"
-msgstr "Content"
+msgstr ""
 
 #: includes/theme-options.php:66
 msgid "Farbeinstellungen"
-msgstr "Color Settings"
+msgstr ""
 
 #: includes/theme-options.php:70
 msgid "Farbschemas"
-msgstr "Color Schemes"
+msgstr ""
 
 #: includes/theme-options.php:75
 msgid "Darstellung der Beitragsübersicht"
-msgstr "Show listed posts"
+msgstr ""
 
 #: includes/theme-options.php:77
 msgid "Beiträge auf der Übersichtsseite anzeigen"
-msgstr "Show posts listed in a category"
+msgstr ""
 
 #: includes/theme-options.php:79
 msgid "Anzahl der angezeigten Wörter in der Vorschau"
-msgstr "Number of shown words in excerpt"
+msgstr ""
 
 #: includes/theme-options.php:81
 msgid "Bild im Textauszug"
-msgstr "Image in excerpt"
+msgstr ""
 
 #: includes/theme-options.php:83
 msgid "Platzhalter für Vorschau"
-msgstr "Placeholder for preview"
+msgstr ""
 
 #: includes/theme-options.php:91
 msgid "keiner"
-msgstr "none"
+msgstr ""
 
 #: includes/theme-options.php:107
 msgid "1 Spalte - keine Sidebar"
-msgstr "1 column - No Sidebar"
+msgstr ""
 
 #: includes/theme-options.php:111
 msgid "2 Spalten - linke Sidebar"
-msgstr "2 columns - Left Sidebar"
+msgstr ""
 
 #: includes/theme-options.php:116
 msgid "2 Spalten - rechte Sidebar"
-msgstr "2 columns - Right sidebar"
+msgstr ""
 
 #: includes/theme-options.php:121
 msgid "3 Spalten - linke und rechte Sidebar"
-msgstr "3 Columns - Left and Right Sidebar"
+msgstr ""
 
 #: includes/theme-options.php:152
 msgid "Titel oben - links"
-msgstr "Title at the top - align left"
+msgstr ""
 
 #: includes/theme-options.php:153
 msgid "Titel oben - zentriert"
-msgstr "Title at the top - align center"
+msgstr ""
 
 #: includes/theme-options.php:154
 msgid "Titel oben - rechts"
-msgstr "Title at the top - align right "
+msgstr ""
 
 #: includes/theme-options.php:155
 msgid "Titel mittig - links"
-msgstr "Titel in the middle - align left"
+msgstr ""
 
 #: includes/theme-options.php:156
 msgid "Titel mittig - rechts"
-msgstr "Title in the middle - align right"
+msgstr ""
 
 #: includes/theme-options.php:157
 msgid "Titel unten - links"
-msgstr "Title at the bottom - align left"
+msgstr ""
 
 #: includes/theme-options.php:158
 msgid "Titel unten - rechts"
-msgstr "Titel at the bottom - align right"
+msgstr ""
 
 #: includes/theme-options.php:202
 msgid "Menüfarbe"
-msgstr "Menu Color"
+msgstr ""
 
 #: includes/theme-options.php:206
 msgid "Menü-Textfarbe"
-msgstr "Menu Text Color"
+msgstr ""
 
 #: includes/theme-options.php:210
 msgid "Menü-Hover-Farbe"
-msgstr "Menu Hover Color"
+msgstr ""
 
 #: includes/theme-options.php:214
 msgid "Menü-Hover-Textfarbe"
-msgstr "Menu Hover Text Color"
+msgstr ""
 
 #: includes/theme-options.php:218
 msgid "Titelfarbe"
-msgstr "Title Color"
+msgstr ""
 
 #: includes/theme-options.php:222
 msgid "Linkfarbe"
-msgstr "Link Color"
+msgstr ""
 
 #: includes/theme-options.php:226
 msgid "Hover-Farbe"
-msgstr "Hover Color"
+msgstr ""
 
 #: includes/theme-options.php:230
 msgid "Hover-Textfarbe"
-msgstr "Hover Text Color"
+msgstr ""
 
 #: includes/theme-options.php:234
 msgid "Widget-Titel in Spalten"
-msgstr "Widget Title in columns"
+msgstr ""
 
 #: includes/theme-options.php:238
 msgid "Widget-Linien in Spalten"
-msgstr "Widget Lines in columns"
+msgstr ""
 
 #: includes/theme-options.php:242
 msgid "Widget-Hover-Farbe in Spalten"
-msgstr "Widget Hover Color in columns"
+msgstr ""
 
 #: includes/theme-options.php:246
 msgid "Widget-Hover-Textfarbe in Spalten"
-msgstr "Widget Hover Text Color in columns"
+msgstr ""
 
 #: includes/theme-options.php:250
 msgid "Widget-Titel im Footer"
-msgstr "Widget Title in footer"
+msgstr ""
 
 #: includes/theme-options.php:254
 msgid "Widget-Textfarbe im Footer"
-msgstr "Widget Text Color in footer"
+msgstr ""
 
 #: includes/theme-options.php:258
 msgid "Widget-Linien im Footer"
-msgstr "Widget Lines in footer"
+msgstr ""
 
 #: includes/theme-options.php:262
 msgid "Hover-Farbe im Footer"
-msgstr "Hover Color in footer"
+msgstr ""
 
 #: includes/theme-options.php:266
 msgid "Hover-Textfarbe im Footer"
-msgstr "Hover Text Color in footer"
+msgstr ""
 
 #: includes/theme-options.php:270
 msgid "Hintergrundfarbe"
-msgstr "Background Color"
+msgstr ""
 
 #: includes/theme-options.php:288
 msgid "Blau"
-msgstr "Blue"
+msgstr ""
 
 #: includes/theme-options.php:294
 msgid "Grün"
-msgstr "Green"
+msgstr ""
 
 #: includes/theme-options.php:300
 msgid "Rot"
-msgstr "Red"
+msgstr ""
 
 #: includes/theme-options.php:306
 msgid "FAU - Nat. Fak."
-msgstr "FAU - Faculty of Sciences"
+msgstr ""
 
 #: includes/theme-options.php:312
 msgid "FAU - Phil. Fak."
-msgstr "FAU - Faculty of Humanities, Social Sciences & Theology"
+msgstr ""
 
 #: includes/theme-options.php:318
 msgid "FAU - ReWi. Fak."
-msgstr "FAU - Faculty of Business, Economics & Law"
+msgstr ""
 
 #: includes/theme-options.php:324
 msgid "FAU - Med. Fak."
-msgstr "FAU - Faculty of Medicine"
+msgstr ""
 
 #: includes/theme-options.php:330
 msgid "FAU"
-msgstr "FAU"
+msgstr ""
 
 #: includes/theme-options.php:343
 msgid "als vollständigen Artikel"
-msgstr "completely"
+msgstr ""
 
 #: includes/theme-options.php:348
 msgid "als kurze Vorschau"
-msgstr "as short preview"
+msgstr ""
 
 #: includes/theme-options.php:358
 msgid "Ausgewähltes Bild > erstes Bild > erstes Video > Standardbild"
-msgstr "Featured image > first image > first video > default image"
+msgstr ""
 
 #: includes/theme-options.php:359
 msgid "Erstes Bild > ausgewähltes Bild > erstes Video > Standardbild"
-msgstr "First image > featured image > first video > default image"
+msgstr ""
 
 #: includes/theme-options.php:360
 msgid "Erstes Video > ausgewähltes Bild > erstes Bild > Standardbild"
-msgstr "First video > featured image > first image > default image"
+msgstr ""
 
 #: includes/theme-options.php:361
 msgid "Erstes Video > erstes Bild > ausgewähltes Bild > Standardbild"
-msgstr "First video > first image > featured image > default image"
+msgstr ""
 
 #: includes/theme-options.php:362
 msgid "Kein Teaser-Bild"
-msgstr "No teaser image"
+msgstr ""
 
 #: includes/theme-options.php:371
 msgid "Platzhalter anzeigen"
-msgstr "Show placeholder"
+msgstr ""
 
 #: includes/theme-options.php:376
 msgid "kein Bild anzeigen"
-msgstr "Don’t show image"
+msgstr ""
 
 #: includes/theme-options.php:385
 msgid "Wählen Sie, welche Optionen Sie aktivieren möchten."
-msgstr "Select the options that you want to enable."
+msgstr ""
 
 #: includes/theme-options.php:389
 msgid "Wählen Sie, welche Schriftart Sie aktivieren möchten."
-msgstr "Choose which font you wish to enable."
+msgstr ""
 
 #: includes/theme-options.php:393
 msgid "Wählen Sie, welches Farbschema Sie aktivieren möchten."
-msgstr "Choose which color scheme you wish to enable."
+msgstr ""
 
 #: includes/theme-options.php:397
 msgid ""
 "Wählen Sie, ob auf der Übersichtsseite die vollständigen Beiträge oder nur "
 "Auszüge angezeigt werden sollen."
-msgstr "Choose if complete posts or excerpts are shown."
+msgstr ""
 
 #: includes/theme-options.php:398
 msgid ""
 "Wenn Sie eine Vorschau anzeigen lassen und der Beitrag keinen Auszug besitzt,"
 " wird der Artikel gekürzt dargestellt. Die Anzahl der angezeigten Wörter "
 "können Sie unten festlegen."
-msgstr "You can set the number of words to be shown in post preview below."
+msgstr ""
 
 #: includes/theme-options.php:447
 msgid "Spalte"
 msgid_plural "Spalten"
-msgstr[0] "Column"
-msgstr[1] "Columns"
+msgstr[0] ""
+msgstr[1] ""
 
 #: includes/theme-options.php:601
 msgid "Benutzerdefiniertes"
-msgstr "Custom"
+msgstr ""
 
 #: includes/theme-options.php:652
 msgid "Lassen Sie die Anzeige leer, um den Standardwert wieder herzustellen."
-msgstr "Enter an empty value to set the default font again."
+msgstr ""
 
 #: includes/theme-options.php:672
 msgid ""
 "Links des Textauszugs wird das Beitragsbild, ein Bild des Artikels, ein "
 "verlinktes Video oder ein Standardbild angezeigt (wenn vorhanden)."
 msgstr ""
-"On the left of the excerpt, the article image, an image of the article, a "
-"video link or a standard image is displayed."
 
 #: includes/theme-options.php:682
 msgid "Platzhalter-Bild für Vorschau"
-msgstr "Placeholder image for preview"
+msgstr ""
 
 #: includes/theme-options.php:685
 msgid "Es ist kein Platzhalter-Bild vorhanden."
-msgstr "There is noch placeholder image."
+msgstr ""
 
 #: includes/theme-options.php:883
 msgid "Spalten"
-msgstr "Columns"
+msgstr ""
 
 #: includes/theme-options.php:905
 msgid "Footer (Widgets)"
-msgstr "Footer (Widgets)"
+msgstr ""
 
 #: includes/theme-tags.php:10
 msgid "Suchen..."
-msgstr "Search..."
+msgstr ""
 
 #: includes/theme-tags.php:10
 msgid "Suchen"
-msgstr "Search"
+msgstr ""
 
 #: includes/theme-tags.php:17
 msgid "Sie befinden sich hier:"
-msgstr "You are here:"
+msgstr ""
 
 #: includes/theme-tags.php:20 includes/theme-tags.php:58
 #: includes/theme-tags.php:197
 msgid "Startseite"
-msgstr "Home"
+msgstr ""
 
 #: includes/theme-tags.php:23
 msgid "Kategorie"
-msgstr "Category"
+msgstr ""
 
 #: includes/theme-tags.php:26
 msgid "Tag"
-msgstr "Tag"
+msgstr ""
 
 #: includes/theme-tags.php:29
 msgid "Archive"
-msgstr "Archive"
+msgstr ""
 
 #: includes/theme-tags.php:32
 msgid "Autor"
-msgstr "Author"
+msgstr ""
 
 #: includes/theme-tags.php:73
 msgid "Suchergebnissenavigation"
-msgstr "Search navigation"
+msgstr ""
 
 #: includes/theme-tags.php:107
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: includes/theme-tags.php:109
 msgid "E-Mail"
-msgstr "E-mail"
+msgstr ""
 
 #: includes/theme-tags.php:111
 msgid "Webauftritt"
-msgstr "Website"
+msgstr ""
 
 #: includes/theme-tags.php:115
 #, php-format
 msgid "Erforderliche Felder sind %s markiert"
-msgstr "Required fields are marked %s"
+msgstr ""
 
 #: includes/theme-tags.php:119
 #, php-format
 msgid ""
 "Sie müssen <a href=\"%s\">angemeldet sein</a>, um einen Kommentar abzugeben."
-msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
 
 #: includes/theme-tags.php:120
 #, php-format
@@ -775,12 +754,10 @@ msgid ""
 "Angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Aus "
 "diesem account abmelden\">Abmelden?</a>"
 msgstr ""
-"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
-"this account\">Log out &raquo;</a>"
 
 #: includes/theme-tags.php:121
 msgid "Ihre Email-Adresse wird nicht veröffentlicht."
-msgstr "Your email address will not be published"
+msgstr ""
 
 #: includes/theme-tags.php:122
 #, php-format
@@ -788,53 +765,51 @@ msgid ""
 "Sie können die folgenden <abbr title=\"HyperText-Markup-Language\">"
 "HTML</abbr>-Tags benutzen: %s"
 msgstr ""
-"You can use the following <abbr title=\"HyperText Markup Language\">"
-"HTML</abbr> tags: %s"
 
 #: includes/theme-tags.php:126
 #, php-format
 msgid "Kommentar an %s hinterlassen"
-msgstr "Leave a comment to %s"
+msgstr ""
 
 #: includes/theme-tags.php:127
 msgid "Abbrechen"
-msgstr "Cancel"
+msgstr ""
 
 #: includes/theme-tags.php:128
 msgid "Kommentar verfassen"
-msgstr "Leave a comment"
+msgstr ""
 
 #: includes/theme-tags.php:241
 msgid "kontakt"
-msgstr "contact"
+msgstr ""
 
 #: includes/theme-tags.php:243
 msgid "Blogs@FAU"
-msgstr "Blogs@FAU"
+msgstr ""
 
 #: includes/theme-tags.php:244
 msgid "Hilfe"
-msgstr "Help"
+msgstr ""
 
 #: includes/theme-tags.php:245
 msgid "Kontakt"
-msgstr "Contact"
+msgstr ""
 
 #: includes/theme-tags.php:246
 msgid "Impressum"
-msgstr "Imprint"
+msgstr ""
 
 #: includes/theme-tags.php:247
 msgid "Datenschutz"
-msgstr "Data protection"
+msgstr ""
 
 #: includes/theme-tags.php:248
 msgid "Nutzungsbedingungen"
-msgstr "Terms of Use"
+msgstr ""
 
 #. Name of the theme
 msgid "Blue Edgy"
-msgstr "Blue Edgy"
+msgstr ""
 
 #. Description of the theme
 msgid ""
@@ -844,20 +819,15 @@ msgid ""
 "angeben und Bild als Logo einfügen). Farbschemas der FAU und der Fakultäten "
 "unter den Einstellungen wählbar."
 msgstr ""
-"Two and three column view in the desktop browser. CSS3 Media Queries, "
-"prepared for viewing on tablets and smartphones. Theme settings in the admin "
-"area (specify personalized background color, link colors and text color and "
-"insert image as logo). Color schemes of the FAU and the faculties can be "
-"selected under the settings."
 
 #. URI of the theme
 msgid "http://github.com/RRZE-Webteam/blue-eddy"
-msgstr "http://github.com/RRZE-Webteam/blue-eddy"
+msgstr ""
 
 #. Author of the theme
 msgid "RRZE-Webteam"
-msgstr "RRZE-Webteam"
+msgstr ""
 
 #. Author URI of the theme
 msgid "http://blogs.fau.de/webworking"
-msgstr "http://blogs.fau.de/webworking"
+msgstr ""
