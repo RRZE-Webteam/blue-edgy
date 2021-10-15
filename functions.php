@@ -630,10 +630,12 @@ class RRZE_Theme {
                     $input = isset($_POST[$meta_box['name']]) ? '1' : '0';
                     break;
                 default:
-                    continue;
+                    $input = null;
+                    break;
             }
-
-            update_post_meta($post_id, $meta_box['name'], $input);  
+            if (!is_null($input)) {
+                update_post_meta($post_id, $meta_box['name'], $input);
+            }  
         }
 
     } 
