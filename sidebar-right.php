@@ -12,7 +12,7 @@
     <?php if( is_blogs_fau_de() && _rrze_theme_options( 'column.layout' ) != '1-2-3' ) : ?>
     <div class="fau-logo">
         <a href="http://www.fau.de">
-            <img src="<?php printf( '%s/images/fau-logo.png', get_stylesheet_directory_uri() ); ?>" alt="Friedrich-Alexander-Universität Erlangen-Nürnberg"/>
+            <img src="<?php printf( '%s/images/fau-logo.svg', get_stylesheet_directory_uri() ); ?>" alt="Friedrich-Alexander-Universität Erlangen-Nürnberg"/>
         </a>
     </div>    
     <div class="network-logo">
